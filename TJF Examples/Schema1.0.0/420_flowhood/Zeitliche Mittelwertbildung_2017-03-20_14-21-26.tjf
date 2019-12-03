@@ -1,0 +1,90 @@
+﻿{
+    "channels": [
+        {
+            "type": {
+                "name": "Ø"
+            },
+            "unit": {
+                "name": "m³/h"
+            },
+            "values": [
+                {
+                    "description": "-60",
+                    "exponent": 0,
+                    "timeStamp": "2017-03-20T14:21:22",
+                    "value": -60.33333206176758
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": "Ø"
+            },
+            "unit": {
+                "name": "Pa"
+            },
+            "values": [
+                {
+                    "description": "-0,037",
+                    "exponent": 3,
+                    "timeStamp": "2017-03-20T14:21:22",
+                    "value": -0.03674999997019768
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": "Ø"
+            },
+            "unit": {
+                "name": "°C"
+            },
+            "values": [
+                {
+                    "description": "----",
+                    "exponent": 1,
+                    "timeStamp": "2017-03-20T14:21:22",
+                    "value": 4.59233532728529e-41
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": "Ø abs."
+            },
+            "unit": {
+                "name": "kPa"
+            },
+            "values": [
+                {
+                    "description": "100,16",
+                    "exponent": 2,
+                    "timeStamp": "2017-03-20T14:21:22",
+                    "value": 100.15750885009766
+                }
+            ]
+        }
+    ],
+    "device": {
+        "name": "testo 420       ",
+        "serial": "50600025"
+    },
+    "properties": [
+        {
+            "description": "measurement duration in seconds",
+            "name": "measurementduration",
+            "values": [
+                {
+                    "description": "12",
+                    "name": "duration",
+                    "value": 12
+                }
+            ]
+        }
+    ],
+    "schemaVersion": "1.0.0",
+    "timeStamp": "2017-03-20T14:21:26",
+    "type": {
+        "name": "Zeitliche Mittelwertbildung"
+    }
+}

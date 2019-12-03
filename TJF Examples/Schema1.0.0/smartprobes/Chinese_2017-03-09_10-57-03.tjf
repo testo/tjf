@@ -1,0 +1,1151 @@
+﻿{
+    "channels": [
+        {
+            "type": {
+                "name": "311"
+            },
+            "unit": {
+                "name": "°C"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "26.0",
+                    "exponent": 1,
+                    "timeStamp": "2017-03-09T10:55:02",
+                    "value": 26.006134033203125
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "26.0",
+                    "exponent": 1,
+                    "timeStamp": "2017-03-09T10:55:04",
+                    "value": 26.006134033203125
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "26.0",
+                    "exponent": 1,
+                    "timeStamp": "2017-03-09T10:55:07",
+                    "value": 26.009429931640625
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "26.0",
+                    "exponent": 1,
+                    "timeStamp": "2017-03-09T10:55:10",
+                    "value": 26.006134033203125
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "26.0",
+                    "exponent": 1,
+                    "timeStamp": "2017-03-09T10:55:12",
+                    "value": 25.999603271484375
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "26.0",
+                    "exponent": 1,
+                    "timeStamp": "2017-03-09T10:55:14",
+                    "value": 26.002899169921875
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "26.0",
+                    "exponent": 1,
+                    "timeStamp": "2017-03-09T10:55:17",
+                    "value": 26.002899169921875
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "26.0",
+                    "exponent": 1,
+                    "timeStamp": "2017-03-09T10:55:19",
+                    "value": 26.002899169921875
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "26.0",
+                    "exponent": 1,
+                    "timeStamp": "2017-03-09T10:55:21",
+                    "value": 25.999603271484375
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "26.0",
+                    "exponent": 1,
+                    "timeStamp": "2017-03-09T10:55:24",
+                    "value": 25.999603271484375
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "26.0",
+                    "exponent": 1,
+                    "timeStamp": "2017-03-09T10:55:26",
+                    "value": 25.993133544921875
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "26.0",
+                    "exponent": 1,
+                    "timeStamp": "2017-03-09T10:55:29",
+                    "value": 25.996368408203125
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "26.0",
+                    "exponent": 1,
+                    "timeStamp": "2017-03-09T10:55:32",
+                    "value": 25.996368408203125
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "26.0",
+                    "exponent": 1,
+                    "timeStamp": "2017-03-09T10:55:34",
+                    "value": 25.993133544921875
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "26.0",
+                    "exponent": 1,
+                    "timeStamp": "2017-03-09T10:55:36",
+                    "value": 25.993133544921875
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "26.0",
+                    "exponent": 1,
+                    "timeStamp": "2017-03-09T10:55:38",
+                    "value": 25.993133544921875
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "26.0",
+                    "exponent": 1,
+                    "timeStamp": "2017-03-09T10:55:40",
+                    "value": 25.993133544921875
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "給気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "マニュアル間隔計測での平均値算出",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "26.0",
+                    "exponent": 1,
+                    "timeStamp": "2017-03-09T10:56:02",
+                    "value": 25.984161376953125
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "給気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "マニュアル間隔計測での平均値算出",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "26.0",
+                    "exponent": 1,
+                    "timeStamp": "2017-03-09T10:56:07",
+                    "value": 25.981353759765625
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "給気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "マニュアル間隔計測での平均値算出",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "26.0",
+                    "exponent": 1,
+                    "timeStamp": "2017-03-09T10:56:12",
+                    "value": 25.983367919921875
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "一定時間内における等間隔計測での平均値算出",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "26.0",
+                    "exponent": 1,
+                    "timeStamp": "2017-03-09T10:56:34",
+                    "value": 25.977630615234375
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "一定時間内における等間隔計測での平均値算出",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "26.0",
+                    "exponent": 1,
+                    "timeStamp": "2017-03-09T10:56:43",
+                    "value": 25.986602783203125
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "マニュアル間隔計測での平均値算出",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "26.0",
+                    "exponent": 1,
+                    "timeStamp": "2017-03-09T10:56:57",
+                    "value": 25.995574951171875
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": "311"
+            },
+            "unit": {
+                "name": "m/s"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "0.61",
+                    "exponent": 2,
+                    "timeStamp": "2017-03-09T10:55:02",
+                    "value": 0.6121894121170044
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "0.84",
+                    "exponent": 2,
+                    "timeStamp": "2017-03-09T10:55:04",
+                    "value": 0.8427283763885498
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "0.79",
+                    "exponent": 2,
+                    "timeStamp": "2017-03-09T10:55:07",
+                    "value": 0.7926653623580933
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "0.70",
+                    "exponent": 2,
+                    "timeStamp": "2017-03-09T10:55:10",
+                    "value": 0.6975756883621216
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "0.76",
+                    "exponent": 2,
+                    "timeStamp": "2017-03-09T10:55:12",
+                    "value": 0.7586250305175781
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "0.89",
+                    "exponent": 2,
+                    "timeStamp": "2017-03-09T10:55:14",
+                    "value": 0.8914003372192383
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "1.02",
+                    "exponent": 2,
+                    "timeStamp": "2017-03-09T10:55:17",
+                    "value": 1.0171377658843994
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "0.64",
+                    "exponent": 2,
+                    "timeStamp": "2017-03-09T10:55:19",
+                    "value": 0.6428558826446533
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "0.90",
+                    "exponent": 2,
+                    "timeStamp": "2017-03-09T10:55:21",
+                    "value": 0.9031791687011719
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "0.78",
+                    "exponent": 2,
+                    "timeStamp": "2017-03-09T10:55:24",
+                    "value": 0.7823513746261597
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "0.90",
+                    "exponent": 2,
+                    "timeStamp": "2017-03-09T10:55:26",
+                    "value": 0.9042820930480957
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "0.94",
+                    "exponent": 2,
+                    "timeStamp": "2017-03-09T10:55:29",
+                    "value": 0.9396551847457886
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "1.01",
+                    "exponent": 2,
+                    "timeStamp": "2017-03-09T10:55:32",
+                    "value": 1.0077579021453857
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "0.73",
+                    "exponent": 2,
+                    "timeStamp": "2017-03-09T10:55:34",
+                    "value": 0.731747031211853
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "0.91",
+                    "exponent": 2,
+                    "timeStamp": "2017-03-09T10:55:36",
+                    "value": 0.9072763919830322
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "1.00",
+                    "exponent": 2,
+                    "timeStamp": "2017-03-09T10:55:38",
+                    "value": 0.999326229095459
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "0.91",
+                    "exponent": 2,
+                    "timeStamp": "2017-03-09T10:55:40",
+                    "value": 0.9095215797424316
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "給気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "マニュアル間隔計測での平均値算出",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "0.68",
+                    "exponent": 2,
+                    "timeStamp": "2017-03-09T10:56:02",
+                    "value": 0.6747829914093018
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "給気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "マニュアル間隔計測での平均値算出",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "0.90",
+                    "exponent": 2,
+                    "timeStamp": "2017-03-09T10:56:07",
+                    "value": 0.8987526893615723
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "給気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "マニュアル間隔計測での平均値算出",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "0.88",
+                    "exponent": 2,
+                    "timeStamp": "2017-03-09T10:56:12",
+                    "value": 0.8844841718673706
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "一定時間内における等間隔計測での平均値算出",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "0.68",
+                    "exponent": 2,
+                    "timeStamp": "2017-03-09T10:56:34",
+                    "value": 0.6834027767181396
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "一定時間内における等間隔計測での平均値算出",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "0.88",
+                    "exponent": 2,
+                    "timeStamp": "2017-03-09T10:56:43",
+                    "value": 0.8826384544372559
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "マニュアル間隔計測での平均値算出",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "0.97",
+                    "exponent": 2,
+                    "timeStamp": "2017-03-09T10:56:57",
+                    "value": 0.9656739234924316
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": "311"
+            },
+            "unit": {
+                "name": "m³/h"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "264",
+                    "exponent": 0,
+                    "timeStamp": "2017-03-09T10:55:02",
+                    "value": 263.51995849609375
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "363",
+                    "exponent": 0,
+                    "timeStamp": "2017-03-09T10:55:04",
+                    "value": 362.87982177734375
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "341",
+                    "exponent": 0,
+                    "timeStamp": "2017-03-09T10:55:07",
+                    "value": 341.27984619140625
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "302",
+                    "exponent": 0,
+                    "timeStamp": "2017-03-09T10:55:10",
+                    "value": 302.39990234375
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "328",
+                    "exponent": 0,
+                    "timeStamp": "2017-03-09T10:55:12",
+                    "value": 328.31988525390625
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "385",
+                    "exponent": 0,
+                    "timeStamp": "2017-03-09T10:55:14",
+                    "value": 384.47991943359375
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "441",
+                    "exponent": 0,
+                    "timeStamp": "2017-03-09T10:55:17",
+                    "value": 440.639892578125
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "277",
+                    "exponent": 0,
+                    "timeStamp": "2017-03-09T10:55:19",
+                    "value": 276.47991943359375
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "389",
+                    "exponent": 0,
+                    "timeStamp": "2017-03-09T10:55:21",
+                    "value": 388.79986572265625
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "337",
+                    "exponent": 0,
+                    "timeStamp": "2017-03-09T10:55:24",
+                    "value": 336.95989990234375
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "389",
+                    "exponent": 0,
+                    "timeStamp": "2017-03-09T10:55:26",
+                    "value": 388.79986572265625
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "406",
+                    "exponent": 0,
+                    "timeStamp": "2017-03-09T10:55:29",
+                    "value": 406.07989501953125
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "436",
+                    "exponent": 0,
+                    "timeStamp": "2017-03-09T10:55:32",
+                    "value": 436.31988525390625
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "315",
+                    "exponent": 0,
+                    "timeStamp": "2017-03-09T10:55:34",
+                    "value": 315.35992431640625
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "393",
+                    "exponent": 0,
+                    "timeStamp": "2017-03-09T10:55:36",
+                    "value": 393.119873046875
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "432",
+                    "exponent": 0,
+                    "timeStamp": "2017-03-09T10:55:38",
+                    "value": 431.9998779296875
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "単発",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "393",
+                    "exponent": 0,
+                    "timeStamp": "2017-03-09T10:55:40",
+                    "value": 393.119873046875
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "給気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "マニュアル間隔計測での平均値算出",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "968",
+                    "exponent": 0,
+                    "timeStamp": "2017-03-09T10:56:02",
+                    "value": 968.3997802734375
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "給気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "マニュアル間隔計測での平均値算出",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "1,296",
+                    "exponent": 0,
+                    "timeStamp": "2017-03-09T10:56:07",
+                    "value": 1295.999755859375
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "給気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "マニュアル間隔計測での平均値算出",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "1,272",
+                    "exponent": 0,
+                    "timeStamp": "2017-03-09T10:56:12",
+                    "value": 1271.99951171875
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "一定時間内における等間隔計測での平均値算出",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "983",
+                    "exponent": 0,
+                    "timeStamp": "2017-03-09T10:56:34",
+                    "value": 982.799560546875
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "一定時間内における等間隔計測での平均値算出",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "1,270",
+                    "exponent": 0,
+                    "timeStamp": "2017-03-09T10:56:43",
+                    "value": 1270.079833984375
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "排気",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "マニュアル間隔計測での平均値算出",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "1,390",
+                    "exponent": 0,
+                    "timeStamp": "2017-03-09T10:56:57",
+                    "value": 1389.599853515625
+                }
+            ]
+        }
+    ],
+    "device": [
+        {
+            "name": "testo 405i",
+            "serial": "48914311"
+        }
+    ],
+    "properties": [
+    ],
+    "schemaVersion": "1.0.0",
+    "timeStamp": "2017-03-09T10:57:03",
+    "type": {
+        "name": "風量 (出口付近)"
+    }
+}
