@@ -1,0 +1,64 @@
+{
+  "timeStamp" : "2017-07-26T10:08:57",
+  "properties" : [
+
+  ],
+  "channels" : [
+    {
+      "type" : {
+        "name" : "313"
+      },
+      "values" : [
+        {
+          "exponent" : 1,
+          "timeStamp" : "2017-07-26T10:08:53",
+          "value" : 0.1992635130882263,
+          "description" : "0,2",
+          "additionalData" : [
+            {
+              "name" : "phase",
+              "description" : "Phase 1"
+            }
+          ]
+        },
+        {
+          "exponent" : 1,
+          "timeStamp" : "2017-07-26T10:08:53",
+          "value" : 0.1992635130882263,
+          "description" : "0,2",
+          "additionalData" : [
+            {
+              "name" : "phase",
+              "description" : "Phase 2"
+            }
+          ]
+        },
+        {
+          "exponent" : 1,
+          "timeStamp" : "2017-07-26T10:08:56",
+          "value" : 0.1992635130882263,
+          "description" : "0,2",
+          "additionalData" : [
+            {
+              "name" : "phase",
+              "description" : "Phase 3"
+            }
+          ]
+        }
+      ],
+      "unit" : {
+        "name" : "A"
+      }
+    }
+  ],
+  "device" : [
+    {
+      "name" : "testo 770-3",
+      "serial" : "142710409313"
+    }
+  ],
+  "schemaVersion" : "1.0.2",
+  "type" : {
+    "name" : "Triple Current"
+  }
+}

@@ -1,0 +1,131 @@
+﻿{
+    "channels": [
+        {
+            "type": {
+                "name": "179"
+            },
+            "unit": {
+                "name": "°C"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "description": "Wand",
+                            "name": "valueType"
+                        }
+                    ],
+                    "description": "25,5",
+                    "exponent": 1,
+                    "timeStamp": "2017-07-26T13:27:55",
+                    "value": 25.484161376953125
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": ""
+            },
+            "unit": {
+                "name": "%RH"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "description": "Wand",
+                            "name": "valueType"
+                        }
+                    ],
+                    "description": "71",
+                    "exponent": 0,
+                    "timeStamp": "2017-07-26T13:27:55",
+                    "value": 71.0948486328125
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": "600"
+            },
+            "unit": {
+                "name": "°C"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "description": "Raum",
+                            "name": "valueType"
+                        }
+                    ],
+                    "description": "19,9",
+                    "exponent": 1,
+                    "timeStamp": "2017-07-26T13:27:55",
+                    "value": 19.890411376953125
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": "600"
+            },
+            "unit": {
+                "name": "%RH"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "description": "Raum",
+                            "name": "valueType"
+                        }
+                    ],
+                    "description": "99,7",
+                    "exponent": 1,
+                    "timeStamp": "2017-07-26T13:27:55",
+                    "value": 99.72608947753906
+                }
+            ]
+        }
+    ],
+    "device": [
+        {
+            "name": "testo 805i",
+            "serial": "49614179"
+        },
+        {
+            "name": "testo 605i",
+            "serial": "14029600"
+        }
+    ],
+    "properties": [
+        {
+            "description": "materialEmission",
+            "name": "materialEmission",
+            "values": [
+                {
+                    "description": "0,66",
+                    "name": "materialEmissionValue",
+                    "value": 0.6600000262260437
+                }
+            ]
+        },
+        {
+            "description": "mouldRisk",
+            "name": "mouldRisk",
+            "values": [
+                {
+                    "description": "< 65%",
+                    "name": "surfaceMoistureLevel",
+                    "value": "low"
+                }
+            ]
+        }
+    ],
+    "schemaVersion": "1.0.2",
+    "timeStamp": "2017-07-26T13:27:55",
+    "type": {
+        "name": "Schimmelindikation"
+    }
+}

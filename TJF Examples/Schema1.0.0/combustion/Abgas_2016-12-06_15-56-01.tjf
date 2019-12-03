@@ -1,0 +1,185 @@
+﻿{
+    "channels": [
+        {
+            "type": {
+                "name": "AT"
+            },
+            "unit": {
+                "name": "°C"
+            },
+            "values": [
+                {
+                    "description": "24,4",
+                    "timeStamp": 1481035976.75,
+                    "value": 24.399999618530273
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": "CO2"
+            },
+            "unit": {
+                "name": "%"
+            },
+            "values": [
+                {
+                    "description": "5,41",
+                    "timeStamp": 1481035976.75,
+                    "value": 5.413332462310791
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": "qA +"
+            },
+            "unit": {
+                "name": "%"
+            },
+            "values": [
+                {
+                    "description": "-6,1",
+                    "timeStamp": 1481035976.75,
+                    "value": -6.0999999046325684
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": "λ"
+            },
+            "unit": {
+                "name": ""
+            },
+            "values": [
+                {
+                    "description": "3,75",
+                    "timeStamp": 1481035976.75,
+                    "value": 3.7500004768371582
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": "O2"
+            },
+            "unit": {
+                "name": "%"
+            },
+            "values": [
+                {
+                    "description": "15,4",
+                    "timeStamp": 1481035976.75,
+                    "value": 15.40000057220459
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": "CO"
+            },
+            "unit": {
+                "name": "ppm"
+            },
+            "values": [
+                {
+                    "description": "0",
+                    "timeStamp": 1481035976.75,
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": "Zug"
+            },
+            "unit": {
+                "name": "Pa"
+            },
+            "values": [
+                {
+                    "description": "-2,1",
+                    "timeStamp": 1481035976.7509999,
+                    "value": -2.1000001430511475
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": "uCO"
+            },
+            "unit": {
+                "name": "ppm"
+            },
+            "values": [
+                {
+                    "description": "0",
+                    "timeStamp": 1481035976.7509999,
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": "η +"
+            },
+            "unit": {
+                "name": "%"
+            },
+            "values": [
+                {
+                    "description": "106,1",
+                    "timeStamp": 1481035976.7509999,
+                    "value": 106.09999847412109
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": "VT"
+            },
+            "unit": {
+                "name": "°C"
+            },
+            "values": [
+                {
+                    "description": "23,8",
+                    "timeStamp": 1481035976.7509999,
+                    "value": 23.80000114440918
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": "ATP"
+            },
+            "unit": {
+                "name": "°C"
+            },
+            "values": [
+                {
+                    "description": "24,4",
+                    "timeStamp": 1481035976.7509999,
+                    "value": 24.399999618530273
+                }
+            ]
+        }
+    ],
+    "device": {
+        "name": "t330-2",
+        "serial": "3027010"
+    },
+    "properties": [
+        {
+            "description": "Holzpellets\u0000",
+            "name": "Fuel",
+            "values": [
+            ]
+        }
+    ],
+    "timeStamp": 1481036161821,
+    "type": {
+        "name": "Abgas"
+    }
+}

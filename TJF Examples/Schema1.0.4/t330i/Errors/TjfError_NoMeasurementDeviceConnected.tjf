@@ -1,0 +1,11 @@
+{
+    "errors": [
+        {
+            "description": "Messgerät ist nicht verbunden",
+            "errorcode": 1,
+            "name": "TjfError_NoMeasurementDeviceConnected"
+        }
+    ],
+    "schemaVersion": "1.0.4",
+    "timeStamp": "2017-12-20T11:19:57"
+}
