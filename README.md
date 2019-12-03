@@ -1,3 +1,5 @@
+[TOC]
+
 # tjf - Testo JSON format
 This repository contains the schema definitions of the Testo JSON format (tjf).
 The tjf is used for App to App (App2App) and the Device to Device (Dev2Dev) communication.
