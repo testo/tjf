@@ -1,0 +1,121 @@
+﻿{
+    "channels": [
+        {
+            "type": {
+                "name": ""
+            },
+            "unit": {
+                "name": "mbar"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "description": "P Start",
+                            "name": "valueType"
+                        }
+                    ],
+                    "description": "11,74",
+                    "exponent": 2,
+                    "timeStamp": "2017-07-26T13:40:02",
+                    "value": 11.737770080566406
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": "500"
+            },
+            "unit": {
+                "name": "mbar"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "description": "P aktuell",
+                            "name": "valueType"
+                        }
+                    ],
+                    "description": "11,93",
+                    "exponent": 2,
+                    "timeStamp": "2017-07-26T13:40:02",
+                    "value": 11.934261322021484
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": ""
+            },
+            "unit": {
+                "name": "mbar"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "description": "ΔP aktuell",
+                            "name": "valueType"
+                        }
+                    ],
+                    "description": "0,19",
+                    "exponent": 2,
+                    "timeStamp": "2017-07-26T13:40:02",
+                    "value": 0.1900005340576172
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": "3"
+            },
+            "unit": {
+                "name": "mbar"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "description": "P Alarm",
+                            "name": "valueType"
+                        }
+                    ],
+                    "description": "-8,26",
+                    "exponent": 2,
+                    "timeStamp": "2017-07-26T13:40:02",
+                    "value": -8.262228012084961
+                }
+            ]
+        }
+    ],
+    "device": [
+        {
+            "name": "testo 510i",
+            "serial": "13379500"
+        }
+    ],
+    "properties": [
+        {
+            "description": "timings",
+            "name": "timings",
+            "values": [
+                {
+                    "description": "0 min",
+                    "name": "stabilisationTime",
+                    "value": 0
+                },
+                {
+                    "description": "1 min",
+                    "name": "testTime",
+                    "value": 1
+                }
+            ]
+        }
+    ],
+    "schemaVersion": "1.0.2",
+    "timeStamp": "2017-07-26T13:40:02",
+    "type": {
+        "name": "Dichtigkeitstest"
+    }
+}

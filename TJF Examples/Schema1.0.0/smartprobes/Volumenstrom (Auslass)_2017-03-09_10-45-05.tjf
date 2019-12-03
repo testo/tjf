@@ -1,0 +1,95 @@
+﻿{
+    "channels": [
+        {
+            "type": {
+                "name": "311"
+            },
+            "unit": {
+                "name": "°C"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "description": "Abluft",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "Einzel",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "25.9",
+                    "exponent": 1,
+                    "timeStamp": "2017-03-09T10:45:02",
+                    "value": 25.928070068359375
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": "311"
+            },
+            "unit": {
+                "name": "m/s"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "description": "Abluft",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "Einzel",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "0.61",
+                    "exponent": 2,
+                    "timeStamp": "2017-03-09T10:45:02",
+                    "value": 0.6110869646072388
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": "311"
+            },
+            "unit": {
+                "name": "m³/h"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "description": "Abluft",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "Einzel",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "264",
+                    "exponent": 0,
+                    "timeStamp": "2017-03-09T10:45:02",
+                    "value": 263.51995849609375
+                }
+            ]
+        }
+    ],
+    "device": [
+        {
+            "name": "testo 405i",
+            "serial": "48914311"
+        }
+    ],
+    "properties": [
+    ],
+    "schemaVersion": "1.0.0",
+    "timeStamp": "2017-03-09T10:45:05",
+    "type": {
+        "name": "Volumenstrom (Auslass)"
+    }
+}

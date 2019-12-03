@@ -1,0 +1,379 @@
+{
+    "additionalMeasurementInformation": [
+    ],
+    "channels": [
+        {
+            "type": {
+                "description": "GT",
+                "name": "Itemp",
+                "xmlid": "GT"
+            },
+            "unit": {
+                "name": "°C",
+                "xmlid": "UNIT_DEG_C"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "name": "dilutionFactor",
+                            "value": 1
+                        },
+                        {
+                            "name": "noxflag",
+                            "value": false
+                        }
+                    ],
+                    "description": "23,7",
+                    "exponent": 1,
+                    "timeStamp": "2017-12-20T11:43:09",
+                    "value": 23.700000762939453
+                }
+            ]
+        },
+        {
+            "type": {
+                "description": "Zug",
+                "name": "Draught",
+                "xmlid": "P_Draft"
+            },
+            "unit": {
+                "name": "mbar",
+                "xmlid": "UNIT_MBAR"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "name": "dilutionFactor",
+                            "value": 1
+                        },
+                        {
+                            "name": "noxflag",
+                            "value": false
+                        }
+                    ],
+                    "description": "-0,01",
+                    "exponent": 2,
+                    "timeStamp": "2017-12-20T11:43:09",
+                    "value": -0.009999999776482582
+                }
+            ]
+        },
+        {
+            "type": {
+                "description": "AT",
+                "name": "FT",
+                "xmlid": "T_Flue"
+            },
+            "unit": {
+                "name": "°C",
+                "xmlid": "UNIT_DEG_C"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "name": "dilutionFactor",
+                            "value": 1
+                        },
+                        {
+                            "name": "noxflag",
+                            "value": false
+                        }
+                    ],
+                    "description": "----",
+                    "exponent": 1,
+                    "timeStamp": "2017-12-20T11:43:09",
+                    "value": 4294967295
+                }
+            ]
+        },
+        {
+            "type": {
+                "description": "CO₂",
+                "name": "CO2",
+                "xmlid": "CO2"
+            },
+            "unit": {
+                "name": "%",
+                "xmlid": "UNIT_PERCENT"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "name": "dilutionFactor",
+                            "value": 1
+                        },
+                        {
+                            "name": "noxflag",
+                            "value": false
+                        }
+                    ],
+                    "description": "----",
+                    "exponent": 2,
+                    "timeStamp": "2017-12-20T11:43:09",
+                    "value": 4294967295
+                }
+            ]
+        },
+        {
+            "type": {
+                "description": "qA +",
+                "name": "qAgr.",
+                "xmlid": "QAgr"
+            },
+            "unit": {
+                "name": "%",
+                "xmlid": "UNIT_PERCENT"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "name": "dilutionFactor",
+                            "value": 1
+                        },
+                        {
+                            "name": "noxflag",
+                            "value": false
+                        }
+                    ],
+                    "description": "----",
+                    "exponent": 1,
+                    "timeStamp": "2017-12-20T11:43:09",
+                    "value": 4294967295
+                }
+            ]
+        },
+        {
+            "type": {
+                "description": "λ",
+                "name": "λ",
+                "xmlid": "Lambda"
+            },
+            "unit": {
+                "name": "",
+                "xmlid": "UNIT_NONE"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "name": "dilutionFactor",
+                            "value": 1
+                        },
+                        {
+                            "name": "noxflag",
+                            "value": false
+                        }
+                    ],
+                    "description": "----",
+                    "exponent": 2,
+                    "timeStamp": "2017-12-20T11:43:09",
+                    "value": 4294967295
+                }
+            ]
+        },
+        {
+            "type": {
+                "description": "O₂",
+                "name": "O2",
+                "xmlid": "O2"
+            },
+            "unit": {
+                "name": "%",
+                "xmlid": "UNIT_PERCENT"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "name": "dilutionFactor",
+                            "value": -1
+                        },
+                        {
+                            "name": "noxflag",
+                            "value": false
+                        }
+                    ],
+                    "description": "21,0",
+                    "exponent": 1,
+                    "timeStamp": "2017-12-20T11:43:09",
+                    "value": 21
+                }
+            ]
+        },
+        {
+            "type": {
+                "description": "CO",
+                "name": "CO",
+                "xmlid": "CO_Dil"
+            },
+            "unit": {
+                "name": "ppm",
+                "xmlid": "UNIT_PPM"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "name": "dilutionFactor",
+                            "value": 1
+                        },
+                        {
+                            "name": "noxflag",
+                            "value": false
+                        }
+                    ],
+                    "description": "0",
+                    "exponent": 0,
+                    "timeStamp": "2017-12-20T11:43:09",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "type": {
+                "description": "COunv",
+                "name": "uCO",
+                "xmlid": "CO_Norm"
+            },
+            "unit": {
+                "name": "ppm",
+                "xmlid": "UNIT_PPM"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "name": "dilutionFactor",
+                            "value": 1
+                        },
+                        {
+                            "name": "noxflag",
+                            "value": false
+                        }
+                    ],
+                    "description": "----",
+                    "exponent": 0,
+                    "timeStamp": "2017-12-20T11:43:09",
+                    "value": 4294967295
+                }
+            ]
+        },
+        {
+            "type": {
+                "description": "η +",
+                "name": "Effg",
+                "xmlid": "Effg"
+            },
+            "unit": {
+                "name": "%",
+                "xmlid": "UNIT_PERCENT"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "name": "dilutionFactor",
+                            "value": 1
+                        },
+                        {
+                            "name": "noxflag",
+                            "value": false
+                        }
+                    ],
+                    "description": "----",
+                    "exponent": 1,
+                    "timeStamp": "2017-12-20T11:43:09",
+                    "value": 4294967295
+                }
+            ]
+        },
+        {
+            "type": {
+                "description": "VT",
+                "name": "AT",
+                "xmlid": "T_Air"
+            },
+            "unit": {
+                "name": "°C",
+                "xmlid": "UNIT_DEG_C"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "name": "dilutionFactor",
+                            "value": 1
+                        },
+                        {
+                            "name": "noxflag",
+                            "value": false
+                        }
+                    ],
+                    "description": "23,9",
+                    "exponent": 1,
+                    "timeStamp": "2017-12-20T11:43:09",
+                    "value": 23.899999618530273
+                }
+            ]
+        },
+        {
+            "type": {
+                "description": "ATP",
+                "name": "Dew Pt",
+                "xmlid": "T_Dew"
+            },
+            "unit": {
+                "name": "°C",
+                "xmlid": "UNIT_DEG_C"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "name": "dilutionFactor",
+                            "value": 1
+                        },
+                        {
+                            "name": "noxflag",
+                            "value": false
+                        }
+                    ],
+                    "description": "----",
+                    "exponent": 1,
+                    "timeStamp": "2017-12-20T11:43:09",
+                    "value": 4294967295
+                }
+            ]
+        }
+    ],
+    "device": {
+        "deviceIdentifier": "TT5322163265NEU0215",
+        "lastServiceDate": "",
+        "name": "t330i",
+        "serial": 22163265
+    },
+    "properties": [
+        {
+            "description": "Erdgas",
+            "id": 104,
+            "name": "Fuel",
+            "values": [
+                {
+                    "description": "3%",
+                    "name": "O₂-Bezug",
+                    "value": 3
+                }
+            ]
+        }
+    ],
+    "schemaVersion": "1.0.4",
+    "timeStamp": "2017-12-20T11:43:09",
+    "type": {
+        "name": "Abgas"
+    }
+}

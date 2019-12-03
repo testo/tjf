@@ -1,0 +1,191 @@
+﻿{
+    "channels": [
+        {
+            "type": {
+                "name": "400"
+            },
+            "unit": {
+                "name": "°C"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "description": "Abluft",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "Einzel",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "28,5",
+                    "exponent": 1,
+                    "timeStamp": "2017-07-26T10:31:07",
+                    "value": 28.454925537109375
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "Abluft",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "Einzel",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "27,5",
+                    "exponent": 1,
+                    "timeStamp": "2017-07-26T10:31:08",
+                    "value": 27.499969482421875
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "Abluft",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "Einzel",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "25,7",
+                    "exponent": 1,
+                    "timeStamp": "2017-07-26T10:31:14",
+                    "value": 25.669830322265625
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": "400"
+            },
+            "unit": {
+                "name": "m/s"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "description": "Abluft",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "Einzel",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "18,46",
+                    "exponent": 2,
+                    "timeStamp": "2017-07-26T10:31:07",
+                    "value": 18.454914093017578
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "Abluft",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "Einzel",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "17,50",
+                    "exponent": 2,
+                    "timeStamp": "2017-07-26T10:31:08",
+                    "value": 17.5
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "Abluft",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "Einzel",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "15,67",
+                    "exponent": 2,
+                    "timeStamp": "2017-07-26T10:31:14",
+                    "value": 15.669872283935547
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": "400"
+            },
+            "unit": {
+                "name": "m³/h"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "description": "Abluft",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "Einzel",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "7.975",
+                    "exponent": 0,
+                    "timeStamp": "2017-07-26T10:31:07",
+                    "value": 7974.7177734375
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "Abluft",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "Einzel",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "7.560",
+                    "exponent": 0,
+                    "timeStamp": "2017-07-26T10:31:08",
+                    "value": 7559.998046875
+                },
+                {
+                    "additionalData": [
+                        {
+                            "description": "Abluft",
+                            "name": "airtype"
+                        },
+                        {
+                            "description": "Einzel",
+                            "name": "measurementmode"
+                        }
+                    ],
+                    "description": "6.769",
+                    "exponent": 0,
+                    "timeStamp": "2017-07-26T10:31:14",
+                    "value": 6769.4375
+                }
+            ]
+        }
+    ],
+    "device": [
+        {
+            "name": "testo 405i",
+            "serial": "64428400"
+        }
+    ],
+    "properties": [
+    ],
+    "schemaVersion": "1.0.2",
+    "timeStamp": "2017-07-26T10:32:08",
+    "type": {
+        "name": "Volumenstrom (Auslass)"
+    }
+}

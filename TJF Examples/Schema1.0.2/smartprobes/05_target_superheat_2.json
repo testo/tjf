@@ -1,0 +1,271 @@
+﻿{
+    "channels": [
+        {
+            "type": {
+                "name": "502"
+            },
+            "unit": {
+                "name": "bar"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "description": "ND",
+                            "name": "valueType"
+                        }
+                    ],
+                    "description": "0,95",
+                    "exponent": 2,
+                    "timeStamp": "2017-07-26T10:51:16",
+                    "value": 0.9477355480194092
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": "501"
+            },
+            "unit": {
+                "name": "bar"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "description": "HD",
+                            "name": "valueType"
+                        }
+                    ],
+                    "description": "1,43",
+                    "exponent": 2,
+                    "timeStamp": "2017-07-26T10:51:16",
+                    "value": 1.4330124855041504
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": ""
+            },
+            "unit": {
+                "name": "°C"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "description": "to",
+                            "name": "valueType"
+                        }
+                    ],
+                    "description": "-69,7",
+                    "exponent": 1,
+                    "timeStamp": "2017-07-26T10:51:16",
+                    "value": -69.73434448242188
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": ""
+            },
+            "unit": {
+                "name": "°C"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "description": "tc",
+                            "name": "valueType"
+                        }
+                    ],
+                    "description": "-65,2",
+                    "exponent": 1,
+                    "timeStamp": "2017-07-26T10:51:16",
+                    "value": -65.22189331054688
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": "100"
+            },
+            "unit": {
+                "name": "°C"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "description": "toh",
+                            "name": "valueType"
+                        }
+                    ],
+                    "description": "-23,0",
+                    "exponent": 1,
+                    "timeStamp": "2017-07-26T10:51:16",
+                    "value": -23.090179443359375
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": "101"
+            },
+            "unit": {
+                "name": "°C"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "description": "tcu",
+                            "name": "valueType"
+                        }
+                    ],
+                    "description": "-13,3",
+                    "exponent": 1,
+                    "timeStamp": "2017-07-26T10:51:16",
+                    "value": -13.308685302734375
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": ""
+            },
+            "unit": {
+                "name": "K"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "description": "Δtoh",
+                            "name": "valueType"
+                        }
+                    ],
+                    "description": "46,7",
+                    "exponent": 1,
+                    "timeStamp": "2017-07-26T10:51:16",
+                    "value": 46.70001220703125
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": ""
+            },
+            "unit": {
+                "name": "K"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "description": "Δtcu",
+                            "name": "valueType"
+                        }
+                    ],
+                    "description": "---",
+                    "exponent": 1,
+                    "timeStamp": "2017-07-26T10:51:16",
+                    "value": 9.80908925027372e-45
+                }
+            ]
+        },
+        {
+            "type": {
+                "name": ""
+            },
+            "unit": {
+                "name": "K"
+            },
+            "values": [
+                {
+                    "additionalData": [
+                        {
+                            "description": "Zielüberhitzung",
+                            "name": "valueType"
+                        }
+                    ],
+                    "description": "4,9",
+                    "exponent": 1,
+                    "timeStamp": "2017-07-26T10:51:16",
+                    "value": 4.888888359069824
+                }
+            ]
+        }
+    ],
+    "device": [
+        {
+            "name": "testo 115i",
+            "serial": "13379100"
+        },
+        {
+            "name": "testo 115i",
+            "serial": "13379101"
+        },
+        {
+            "name": "testo 549i",
+            "serial": "13379502"
+        },
+        {
+            "name": "testo 549i",
+            "serial": "13379501"
+        }
+    ],
+    "properties": [
+        {
+            "description": "refrigerant",
+            "name": "refrigerant",
+            "values": [
+                {
+                    "description": "R23",
+                    "name": "refrigerantValue",
+                    "value": "R23"
+                }
+            ]
+        },
+        {
+            "description": "pressureType",
+            "name": "pressureType",
+            "values": [
+                {
+                    "description": "P<sub>rel</sub>",
+                    "name": "pressureTypeValue",
+                    "value": "P<sub>rel</sub>"
+                }
+            ]
+        },
+        {
+            "description": "returnAirWetBulb",
+            "name": "returnAirWetBulb",
+            "values": [
+                {
+                    "description": "10 wb °C",
+                    "name": "returnAirWetBulbValue",
+                    "value": 10
+                }
+            ]
+        },
+        {
+            "description": "outdoorDryBulb",
+            "name": "outdoorDryBulb",
+            "values": [
+                {
+                    "description": "12.8 °C",
+                    "name": "outdoorDryBulbValue",
+                    "value": 12.800000190734863
+                }
+            ]
+        }
+    ],
+    "schemaVersion": "1.0.2",
+    "timeStamp": "2017-07-26T10:51:16",
+    "type": {
+        "name": "Zielüberhitzung"
+    }
+}
