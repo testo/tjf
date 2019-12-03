@@ -3,16 +3,20 @@ This repository contains the schema definitions of the Testo JSON format (tjf).
 The tjf is used for App to App (App2App) and the Device to Device (Dev2Dev) communication.
 
 App2App is included into the following Apps:
-- SmartProbes (t115i, t405i, t410i, t510i, t549i, t605i, t805i, t905i, t770-3)
-- testo 330i App (t330i)
-- testo Combustion App Android (testo 320, testo 324,  testo 327-2, testo 330, testo 335, testo 340, testo 350 (since 2011))
-- testo Combustion App iOS (testo 330)
-- testo 420 App (t420)
-- testo Refrigeration (t550, t557 (generation since 2015))
+| App      | Devices |
+| --------- | -----|
+| SmartProbes | t115i, t405i, t410i, t510i, t549i, t605i, t805i, t905i, t770-3 |
+| testo 330i App | t330i |
+| testo Combustion App Android | testo 320, testo 324,  testo 327-2, testo 330, testo 335, testo 340, testo 350 (since 2011) |
+| testo Combustion App iOS | t330 |
+| testo 420 App | t420 |
+| testo Refrigeration | t550, t557 (generation since 2015) |
 
 Dev2Dev is included into the following Apps / Devcies:
-- testo 330i App (t330i)
-- testo 300 (t300)
+| App / Device     | Devices |
+| --------- | -----|
+| testo 300 | t300 |
+| testo 330i App | t330i |
 
 ## Extended schema
 The extended schema is designed to hold all possibly necessary data a measurement can contain.
