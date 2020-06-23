@@ -1,0 +1,19 @@
+openapi: '3.0.2'
+info:
+  title: General DeviceInfo API
+  version: '1.0'
+servers:
+  - url: https://192.168.2.94:55000
+paths:
+  /deviceInfo:
+    get:
+      summary: Returns a JSON object with the device information
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '../schema/v2.0.0/device-schema-v2.0.0.json'
+        default:
+          description: Unexpected error
