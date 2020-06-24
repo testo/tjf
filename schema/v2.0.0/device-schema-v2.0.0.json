@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-07/schema",
     "$id": "http://example.com/example.json",
     "type": "object",
-    "title": "DeviceSchema",
+    "title": "Device Schema",
     "description": "The schema contains the information about the device and the application.",
     "default": {},
     "examples": [

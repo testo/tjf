@@ -1,6 +1,6 @@
 openapi: '3.0.2'
 info:
-  title: General DeviceInfo API
+  title: General Testo API
   version: '1.0'
 servers:
   - url: https://192.168.2.94:55000
@@ -15,5 +15,17 @@ paths:
             application/json:
               schema:
                 $ref: '../schema/v2.0.0/deviceInfo-schema-legacy.json'
+        default:
+          description: Unexpected error
+  /customer:
+    get:
+      summary: Returns a JSON object with the customer
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '../schema/v2.0.0/customer-schema-v2.0.0.json'
         default:
           description: Unexpected error

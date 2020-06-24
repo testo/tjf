@@ -1,0 +1,128 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "Customer schema",
+    "description": "The schema contains the information about the customer.",
+    "default": {},
+    "examples": [
+        {
+            "name": "Testo",
+            "firstName": "Johann",
+            "address": "Celsiusstraße 2",
+            "postcode": 79822,
+            "town": "Titisee-Neustadt",
+            "country": "Germany",
+            "phonenumber": "07653 6810",
+            "email": "info@testo.de",
+            "contactPerson": "Wilhelm v. Testo",
+            "customerNumber": 3
+        }
+    ],
+    "required": [
+        "name"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "name": {
+            "$id": "#/properties/name",
+            "type": "string",
+            "title": "Name",
+            "description": "The name of the customer of the company.",
+            "default": "",
+            "examples": [
+                "Testo"
+            ]
+        },
+        "firstName": {
+            "$id": "#/properties/firstName",
+            "type": "string",
+            "title": "First Name",
+            "description": "The first name of the customer.",
+            "default": "",
+            "examples": [
+                "Johann"
+            ]
+        },
+        "address": {
+            "$id": "#/properties/address",
+            "type": "string",
+            "title": "Address",
+            "description": "The street and house number of the company/customer.",
+            "default": "",
+            "examples": [
+                "Celsiusstraße 2"
+            ]
+        },
+        "postcode": {
+            "$id": "#/properties/postcode",
+            "type": "integer",
+            "title": "Postcode",
+            "description": "The postcode of the town.",
+            "default": 0,
+            "examples": [
+                79822
+            ]
+        },
+        "town": {
+            "$id": "#/properties/town",
+            "type": "string",
+            "title": "Town",
+            "description": "The name of the town.",
+            "default": "",
+            "examples": [
+                "Titisee-Neustadt"
+            ]
+        },
+        "country": {
+            "$id": "#/properties/country",
+            "type": "string",
+            "title": "Country",
+            "description": "The country where the company/customer is located.",
+            "default": "",
+            "examples": [
+                "Germany"
+            ]
+        },
+        "phonenumber": {
+            "$id": "#/properties/phonenumber",
+            "type": "string",
+            "title": "Phone number",
+            "description": "The phone number of the customer/company.",
+            "default": "",
+            "examples": [
+                "07653 6810"
+            ]
+        },
+        "email": {
+            "$id": "#/properties/email",
+            "type": "string",
+            "title": "Email",
+            "description": "The email of the customer/company.",
+            "default": "",
+            "examples": [
+                "info@testo.de"
+            ]
+        },
+        "contactPerson": {
+            "$id": "#/properties/contactPerson",
+            "type": "string",
+            "title": "Contact Person",
+            "description": "The name of the contact person.",
+            "default": "",
+            "examples": [
+                "Wilhelm v. Testo"
+            ]
+        },
+        "customerNumber": {
+            "$id": "#/properties/customerNumber",
+            "type": "integer",
+            "title": "Customer Number",
+            "description": "The customer number.",
+            "default": 0,
+            "examples": [
+                3
+            ]
+        }
+    }
+}
