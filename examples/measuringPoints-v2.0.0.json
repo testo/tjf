@@ -1,0 +1,72 @@
+{
+    "Customer": "1bd2641d-edbb-4bb6-8b1f-00468235a162",
+    "Name": "Messstelle",
+    "Notes": "",
+    "Settings": [
+        {
+            "Key": "MeasConfigType",
+            "Type": "std::string",
+            "Value": "MeasConfigImportDuct"
+        },
+        {
+            "Key": "MeasurementType",
+            "Type": "std::string",
+            "Value": "Continuous"
+        },
+        {
+            "Key": "AirType",
+            "Type": "std::string",
+            "Value": "ReturnAir"
+        },
+        {
+            "Key": "CorrectionFactor",
+            "Precision": 2,
+            "Type": "std::pair<float, int8_t>",
+            "Value": 1
+        },
+        {
+            "Key": "FreeArea",
+            "Type": "uint8_t",
+            "Value": 100
+        },
+        {
+            "Key": "UseStandardVolumeFlow",
+            "Type": "bool",
+            "Value": false
+        },
+        {
+            "Key": "MeasInterval",
+            "Type": "uint8_t",
+            "Value": 1
+        },
+        {
+            "Key": "Geometry",
+            "Type": "std::string",
+            "Value": "Rectangular"
+        },
+        {
+            "BaseUnit": "m",
+            "BaseUnitPrecision": 3,
+            "Key": "Height",
+            "Type": "std::pair<SharedQuantityPtr, int8_t>",
+            "Unit": "cm",
+            "Value": 0.3999999761581421
+        },
+        {
+            "BaseUnit": "m",
+            "BaseUnitPrecision": 3,
+            "Key": "Width",
+            "Type": "std::pair<SharedQuantityPtr, int8_t>",
+            "Unit": "cm",
+            "Value": 0.2999999523162842
+        }
+    ],
+    "SysteManufacturerDate": "",
+    "SystemManufacturer": "",
+    "SystemNumber": "",
+    "SystemSerial": "",
+    "SystemType": "",
+    "UseRlt": false,
+    "type": "MeasuringPoint",
+    "uuid": "9c909a26-53e4-4019-85f0-1728e91cb93e"
+}

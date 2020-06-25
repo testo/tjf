@@ -29,3 +29,15 @@ paths:
                 $ref: '../schema/v2.0.0/customer-schema-v2.0.0.json'
         default:
           description: Unexpected error
+  /measuringPoints:
+    get:
+      summary: Returns a JSON object with the measuring points
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '../schema/v2.0.0/measuringpoint-schema-v2.0.0.json'
+        default:
+          description: Unexpected error
