@@ -1,12 +1,16 @@
 {
-    "name": "Testo",
-    "firstName": "Johann",
-    "address": "Celsiusstraße 2",
-    "postcode": 79822,
-    "town": "Titisee-Neustadt",
-    "country": "Germany",
-    "phonenumber": "07653 6810",
-    "email": "info@testo.de",
-    "contactPerson": "Wilhelm v. Testo",
-    "customerNumber": 3
+    "City": "79822 Titisee-Neustadt",
+    "Country": "Germany",
+    "CustomerNumber": 0,
+    "Email": "info@testo.de",
+    "Fax": "+49 7653 681-701",
+    "FirstName": "Christian",
+    "Homepage": "www.testo.com",
+    "Logo": "0d1ad806-d5e0-40c3-b77d-273e7b00344e.jpg",
+    "Name": "t400 Video Shooting Corp.",
+    "PersonOfContact": "PM Tobias",
+    "Phone": "+49 7653 681-700",
+    "Street": "Celsiusstraße 2",
+    "type": "Contact",
+    "uuid": "4a3b9363-7583-49cd-8cc9-9c45c81d3cdc"
 }

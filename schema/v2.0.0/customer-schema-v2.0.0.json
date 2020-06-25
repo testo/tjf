@@ -12,6 +12,7 @@
             "CustomerNumber": "",
             "Email": "info@testo.de",
             "Fax": "+49 7653 681-701",
+            "FirstName": "Christian",
             "Homepage": "www.testo.com",
             "Logo": "0d1ad806-d5e0-40c3-b77d-273e7b00344e.jpg",
             "Name": "t400 Video Shooting Corp.",
@@ -76,6 +77,16 @@
             "default": "",
             "examples": [
                 "+49 7653 681-701"
+            ]
+        },
+        "FirstName": {
+            "$id": "#/properties/FirstName",
+            "type": "string",
+            "title": "First name",
+            "description": "The first name of the customer.",
+            "default": "",
+            "examples": [
+                "Christian"
             ]
         },
         "Homepage": {
