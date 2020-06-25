@@ -1,9 +1,11 @@
 from flask import Flask
+from flask_cors import CORS
 import requests
 import json
 import os
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/deviceInfo')
 def get_deviceInfo():

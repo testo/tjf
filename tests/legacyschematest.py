@@ -11,6 +11,7 @@ url = 'http://localhost:5000'
 def test_matchSchema():
     response = requests.get(url=url + '/deviceInfo')
     assert response.status_code == 200
+    assert 'Access-Control-Allow-Origin' in response.headers
     with open(os.path.dirname(__file__) + '/../schema/v2.0.0/deviceInfo-schema-legacy.json') as json_file:
         schema = json.load(json_file)
         instance = response.json()
