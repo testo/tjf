@@ -1,0 +1,274 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "Customer": "1bd2641d-edbb-4bb6-8b1f-00468235a162",
+            "Name": "Messstelle",
+            "Notes": "",
+            "Settings": [
+                {
+                    "BaseUnit": "m",
+                    "BaseUnitPrecision": 3,
+                    "Key": "Width",
+                    "Type": "std::pair<SharedQuantityPtr, int8_t>",
+                    "Unit": "cm",
+                    "Precision": 3,
+                    "Value": 0.2999999523162842
+                }
+            ],
+            "SystemManufacturerDate": "",
+            "SystemManufacturer": "",
+            "SystemNumber": "",
+            "SystemSerial": "",
+            "SystemType": "",
+            "UseRlt": false,
+            "type": "MeasuringPoint",
+            "uuid": "9c909a26-53e4-4019-85f0-1728e91cb93e"
+        }
+    ],
+    "required": [
+        "Customer",
+        "Name",
+        "uuid"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "Customer": {
+            "$id": "#/properties/Customer",
+            "type": "string",
+            "title": "Customer UUID",
+            "description": "The UUID of the customer the measuring point belongs to.",
+            "default": "",
+            "examples": [
+                "1bd2641d-edbb-4bb6-8b1f-00468235a162"
+            ]
+        },
+        "Name": {
+            "$id": "#/properties/Name",
+            "type": "string",
+            "title": "Name",
+            "description": "The name of the measuring point.",
+            "default": "",
+            "examples": [
+                "Messstelle"
+            ]
+        },
+        "Notes": {
+            "$id": "#/properties/Notes",
+            "type": "string",
+            "title": "Notes",
+            "description": "Notes to the measuring point.",
+            "default": "",
+            "examples": [
+                ""
+            ]
+        },
+        "Settings": {
+            "$id": "#/properties/Settings",
+            "type": "array",
+            "title": "Settings",
+            "description": "The settings of the measuring point.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "BaseUnit": "m",
+                        "BaseUnitPrecision": 3,
+                        "Key": "Width",
+                        "Type": "std::pair<SharedQuantityPtr, int8_t>",
+                        "Unit": "cm",
+                        "Precision": 3,
+                        "Value": 0.2999999523162842
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "anyOf": [
+                    {
+                        "$id": "#/properties/Settings/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "BaseUnit": "m",
+                                "BaseUnitPrecision": 3,
+                                "Key": "Width",
+                                "Type": "std::pair<SharedQuantityPtr, int8_t>",
+                                "Unit": "cm",
+                                "Precision": 3,
+                                "Value": 0.2999999523162842
+                            }
+                        ],
+                        "required": [
+                            "Key",
+                            "Type",
+                            "Value"
+                        ],
+                        "additionalProperties": true,
+                        "properties": {
+                            "BaseUnit": {
+                                "$id": "#/properties/Settings/items/anyOf/0/properties/BaseUnit",
+                                "type": "string",
+                                "title": "Base unit",
+                                "description": "The base unit of the measuring point.",
+                                "default": "",
+                                "examples": [
+                                    "m"
+                                ]
+                            },
+                            "BaseUnitPrecision": {
+                                "$id": "#/properties/Settings/items/anyOf/0/properties/BaseUnitPrecision",
+                                "type": "integer",
+                                "title": "Base unit precision",
+                                "description": "The precision of the base unit.",
+                                "default": 0,
+                                "examples": [
+                                    3
+                                ]
+                            },
+                            "Key": {
+                                "$id": "#/properties/Settings/items/anyOf/0/properties/Key",
+                                "type": "string",
+                                "title": "Key",
+                                "description": "Key",
+                                "default": "",
+                                "examples": [
+                                    "Width"
+                                ]
+                            },
+                            "Type": {
+                                "$id": "#/properties/Settings/items/anyOf/0/properties/Type",
+                                "type": "string",
+                                "title": "Type",
+                                "description": "The C++ Datatype.",
+                                "default": "",
+                                "examples": [
+                                    "std::pair<SharedQuantityPtr, int8_t>"
+                                ]
+                            },
+                            "Unit": {
+                                "$id": "#/properties/Settings/items/anyOf/0/properties/Unit",
+                                "type": "string",
+                                "title": "Unit",
+                                "description": "The unit.",
+                                "default": "",
+                                "examples": [
+                                    "cm"
+                                ]
+                            },
+                            "Precision": {
+                                "$id": "#/properties/Settings/items/anyOf/0/properties/Precision",
+                                "type": "integer",
+                                "title": "Precision",
+                                "description": "The precision of the unit.",
+                                "default": 0,
+                                "examples": [
+                                    3
+                                ]
+                            },
+                            "Value": {
+                                "$id": "#/properties/Settings/items/anyOf/0/properties/Value",
+                                "type": "number",
+                                "title": "Value",
+                                "description": "The value.",
+                                "default": 0.0,
+                                "examples": [
+                                    0.2999999523162842
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "$id": "#/properties/Settings/items"
+            }
+        },
+        "SystemManufacturerDate": {
+            "$id": "#/properties/SystemManufacturerDate",
+            "type": "string",
+            "title": "System manufacturer date",
+            "description": "The date in which the system was manufactured.",
+            "default": "",
+            "examples": [
+                ""
+            ]
+        },
+        "SystemManufacturer": {
+            "$id": "#/properties/SystemManufacturer",
+            "type": "string",
+            "title": "System manufacturer",
+            "description": "The system manufacturer.",
+            "default": "",
+            "examples": [
+                ""
+            ]
+        },
+        "SystemNumber": {
+            "$id": "#/properties/SystemNumber",
+            "type": "string",
+            "title": "System number",
+            "description": "The system number",
+            "default": "",
+            "examples": [
+                ""
+            ]
+        },
+        "SystemSerial": {
+            "$id": "#/properties/SystemSerial",
+            "type": "string",
+            "title": "System serial",
+            "description": "System serial",
+            "default": "",
+            "examples": [
+                ""
+            ]
+        },
+        "SystemType": {
+            "$id": "#/properties/SystemType",
+            "type": "string",
+            "title": "System type",
+            "description": "The type of the system.",
+            "default": "",
+            "examples": [
+                ""
+            ]
+        },
+        "UseRlt": {
+            "$id": "#/properties/UseRlt",
+            "type": "boolean",
+            "title": "Use Rlt",
+            "description": "If Rlt is enabled?",
+            "default": false,
+            "examples": [
+                false
+            ]
+        },
+        "type": {
+            "$id": "#/properties/type",
+            "type": "string",
+            "title": "Type",
+            "description": "The type.",
+            "default": "",
+            "examples": [
+                "MeasuringPoint"
+            ]
+        },
+        "uuid": {
+            "$id": "#/properties/uuid",
+            "type": "string",
+            "title": "UUID",
+            "description": "The UUID of the measuring point.",
+            "default": "",
+            "examples": [
+                "9c909a26-53e4-4019-85f0-1728e91cb93e"
+            ]
+        }
+    }
+}
