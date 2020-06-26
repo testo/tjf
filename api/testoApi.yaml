@@ -3,7 +3,7 @@ info:
   title: General Testo API
   version: '1.0'
 servers:
-  - url: https://192.168.2.94:55000
+  - url: https://{location}
 paths:
   /deviceInfo:
     get:
