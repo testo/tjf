@@ -1,72 +1,72 @@
 {
-    "Customer": "1bd2641d-edbb-4bb6-8b1f-00468235a162",
-    "Name": "Messstelle",
-    "Notes": "",
-    "Settings": [
+    "customer": "1bd2641d-edbb-4bb6-8b1f-00468235a162",
+    "name": "Messstelle",
+    "notes": "",
+    "settings": [
         {
-            "Key": "MeasConfigType",
-            "Type": "std::string",
-            "Value": "MeasConfigImportDuct"
+            "key": "MeasConfigType",
+            "type": "std::string",
+            "value": "MeasConfigImportDuct"
         },
         {
-            "Key": "MeasurementType",
-            "Type": "std::string",
-            "Value": "Continuous"
+            "key": "MeasurementType",
+            "type": "std::string",
+            "value": "Continuous"
         },
         {
-            "Key": "AirType",
-            "Type": "std::string",
-            "Value": "ReturnAir"
+            "key": "AirType",
+            "type": "std::string",
+            "value": "ReturnAir"
         },
         {
-            "Key": "CorrectionFactor",
+            "key": "CorrectionFactor",
             "Precision": 2,
-            "Type": "std::pair<float, int8_t>",
-            "Value": 1
+            "type": "std::pair<float, int8_t>",
+            "value": 1
         },
         {
-            "Key": "FreeArea",
-            "Type": "uint8_t",
-            "Value": 100
+            "key": "FreeArea",
+            "type": "uint8_t",
+            "value": 100
         },
         {
-            "Key": "UseStandardVolumeFlow",
-            "Type": "bool",
-            "Value": false
+            "key": "UseStandardVolumeFlow",
+            "type": "bool",
+            "value": false
         },
         {
-            "Key": "MeasInterval",
-            "Type": "uint8_t",
-            "Value": 1
+            "key": "MeasInterval",
+            "type": "uint8_t",
+            "value": 1
         },
         {
-            "Key": "Geometry",
-            "Type": "std::string",
-            "Value": "Rectangular"
+            "key": "Geometry",
+            "type": "std::string",
+            "value": "Rectangular"
         },
         {
-            "BaseUnit": "m",
-            "BaseUnitPrecision": 3,
-            "Key": "Height",
-            "Type": "std::pair<SharedQuantityPtr, int8_t>",
-            "Unit": "cm",
-            "Value": 0.3999999761581421
+            "base_unit": "m",
+            "base_unit_precision": 3,
+            "key": "Height",
+            "type": "std::pair<SharedQuantityPtr, int8_t>",
+            "unit": "cm",
+            "value": 0.3999999761581421
         },
         {
-            "BaseUnit": "m",
-            "BaseUnitPrecision": 3,
-            "Key": "Width",
-            "Type": "std::pair<SharedQuantityPtr, int8_t>",
-            "Unit": "cm",
-            "Value": 0.2999999523162842
+            "base_unit": "m",
+            "base_unit_precision": 3,
+            "key": "Width",
+            "type": "std::pair<SharedQuantityPtr, int8_t>",
+            "unit": "cm",
+            "value": 0.2999999523162842
         }
     ],
-    "SysteManufacturerDate": "",
-    "SystemManufacturer": "",
-    "SystemNumber": "",
-    "SystemSerial": "",
-    "SystemType": "",
-    "UseRlt": false,
+    "system_manufacturer_date": "",
+    "system_manufacturer": "",
+    "system_number": "",
+    "system_serial": "",
+    "system_type": "",
+    "use_rlt": false,
     "type": "MeasuringPoint",
     "uuid": "9c909a26-53e4-4019-85f0-1728e91cb93e"
 }

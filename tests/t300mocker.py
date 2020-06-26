@@ -31,3 +31,16 @@ def get_customer():
     )
 
     return response
+
+@app.route('/measuringPoints')
+def get_measuringPoints():
+    with open(os.path.dirname(__file__) + '/../examples/measuringPoints-v2.0.0.json') as json_file:
+        data = json.load(json_file)
+
+    response = app.response_class(
+        response=json.dumps(data),
+        status=200,
+        mimetype='application/json'
+    )
+
+    return response

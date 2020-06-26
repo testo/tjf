@@ -7,39 +7,39 @@
     "default": {},
     "examples": [
         {
-            "Customer": "1bd2641d-edbb-4bb6-8b1f-00468235a162",
-            "Name": "Messstelle",
-            "Notes": "",
-            "Settings": [
+            "customer": "1bd2641d-edbb-4bb6-8b1f-00468235a162",
+            "name": "Messstelle",
+            "notes": "",
+            "settings": [
                 {
-                    "BaseUnit": "m",
-                    "BaseUnitPrecision": 3,
-                    "Key": "Width",
-                    "Type": "std::pair<SharedQuantityPtr, int8_t>",
-                    "Unit": "cm",
-                    "Precision": 3,
-                    "Value": 0.2999999523162842
+                    "base_unit": "m",
+                    "base_unit_precision": 3,
+                    "key": "Width",
+                    "type": "std::pair<SharedQuantityPtr, int8_t>",
+                    "unit": "cm",
+                    "precision": 3,
+                    "value": 0.2999999523162842
                 }
             ],
-            "SystemManufacturerDate": "",
-            "SystemManufacturer": "",
-            "SystemNumber": "",
-            "SystemSerial": "",
-            "SystemType": "",
-            "UseRlt": false,
+            "system_manufacturer_date": "",
+            "system_manufacturer": "",
+            "system_number": "",
+            "system_serial": "",
+            "system_type": "",
+            "use_rlt": false,
             "type": "MeasuringPoint",
             "uuid": "9c909a26-53e4-4019-85f0-1728e91cb93e"
         }
     ],
     "required": [
-        "Customer",
-        "Name",
+        "customer",
+        "name",
         "uuid"
     ],
     "additionalProperties": true,
     "properties": {
-        "Customer": {
-            "$id": "#/properties/Customer",
+        "customer": {
+            "$id": "#/properties/customer",
             "type": "string",
             "title": "Customer UUID",
             "description": "The UUID of the customer the measuring point belongs to.",
@@ -48,8 +48,8 @@
                 "1bd2641d-edbb-4bb6-8b1f-00468235a162"
             ]
         },
-        "Name": {
-            "$id": "#/properties/Name",
+        "name": {
+            "$id": "#/properties/name",
             "type": "string",
             "title": "Name",
             "description": "The name of the measuring point.",
@@ -58,8 +58,8 @@
                 "Messstelle"
             ]
         },
-        "Notes": {
-            "$id": "#/properties/Notes",
+        "notes": {
+            "$id": "#/properties/notes",
             "type": "string",
             "title": "Notes",
             "description": "Notes to the measuring point.",
@@ -68,8 +68,8 @@
                 ""
             ]
         },
-        "Settings": {
-            "$id": "#/properties/Settings",
+        "settings": {
+            "$id": "#/properties/settings",
             "type": "array",
             "title": "Settings",
             "description": "The settings of the measuring point.",
@@ -77,13 +77,13 @@
             "examples": [
                 [
                     {
-                        "BaseUnit": "m",
-                        "BaseUnitPrecision": 3,
-                        "Key": "Width",
-                        "Type": "std::pair<SharedQuantityPtr, int8_t>",
-                        "Unit": "cm",
-                        "Precision": 3,
-                        "Value": 0.2999999523162842
+                        "base_unit": "m",
+                        "base_unit_precision": 3,
+                        "key": "Width",
+                        "type": "std::pair<SharedQuantityPtr, int8_t>",
+                        "unit": "cm",
+                        "precision": 3,
+                        "value": 0.2999999523162842
                     }
                 ]
             ],
@@ -98,24 +98,24 @@
                         "default": {},
                         "examples": [
                             {
-                                "BaseUnit": "m",
-                                "BaseUnitPrecision": 3,
-                                "Key": "Width",
-                                "Type": "std::pair<SharedQuantityPtr, int8_t>",
-                                "Unit": "cm",
-                                "Precision": 3,
-                                "Value": 0.2999999523162842
+                                "base_unit": "m",
+                                "base_unit_precision": 3,
+                                "key": "Width",
+                                "type": "std::pair<SharedQuantityPtr, int8_t>",
+                                "unit": "cm",
+                                "precision": 3,
+                                "value": 0.2999999523162842
                             }
                         ],
                         "required": [
-                            "Key",
-                            "Type",
-                            "Value"
+                            "key",
+                            "type",
+                            "value"
                         ],
                         "additionalProperties": true,
                         "properties": {
-                            "BaseUnit": {
-                                "$id": "#/properties/Settings/items/anyOf/0/properties/BaseUnit",
+                            "base_unit": {
+                                "$id": "#/properties/Settings/items/anyOf/0/properties/base_unit",
                                 "type": "string",
                                 "title": "Base unit",
                                 "description": "The base unit of the measuring point.",
@@ -124,8 +124,8 @@
                                     "m"
                                 ]
                             },
-                            "BaseUnitPrecision": {
-                                "$id": "#/properties/Settings/items/anyOf/0/properties/BaseUnitPrecision",
+                            "base_unit_precision": {
+                                "$id": "#/properties/Settings/items/anyOf/0/properties/base_unit_precision",
                                 "type": "integer",
                                 "title": "Base unit precision",
                                 "description": "The precision of the base unit.",
@@ -134,8 +134,8 @@
                                     3
                                 ]
                             },
-                            "Key": {
-                                "$id": "#/properties/Settings/items/anyOf/0/properties/Key",
+                            "key": {
+                                "$id": "#/properties/Settings/items/anyOf/0/properties/key",
                                 "type": "string",
                                 "title": "Key",
                                 "description": "Key",
@@ -144,8 +144,8 @@
                                     "Width"
                                 ]
                             },
-                            "Type": {
-                                "$id": "#/properties/Settings/items/anyOf/0/properties/Type",
+                            "type": {
+                                "$id": "#/properties/Settings/items/anyOf/0/properties/type",
                                 "type": "string",
                                 "title": "Type",
                                 "description": "The C++ Datatype.",
@@ -154,8 +154,8 @@
                                     "std::pair<SharedQuantityPtr, int8_t>"
                                 ]
                             },
-                            "Unit": {
-                                "$id": "#/properties/Settings/items/anyOf/0/properties/Unit",
+                            "unit": {
+                                "$id": "#/properties/Settings/items/anyOf/0/properties/unit",
                                 "type": "string",
                                 "title": "Unit",
                                 "description": "The unit.",
@@ -164,8 +164,8 @@
                                     "cm"
                                 ]
                             },
-                            "Precision": {
-                                "$id": "#/properties/Settings/items/anyOf/0/properties/Precision",
+                            "precision": {
+                                "$id": "#/properties/Settings/items/anyOf/0/properties/precision",
                                 "type": "integer",
                                 "title": "Precision",
                                 "description": "The precision of the unit.",
@@ -174,9 +174,9 @@
                                     3
                                 ]
                             },
-                            "Value": {
-                                "$id": "#/properties/Settings/items/anyOf/0/properties/Value",
-                                "type": "number",
+                            "value": {
+                                "$id": "#/properties/Settings/items/anyOf/0/properties/value",
+                                "type": ["number","string","boolean"],
                                 "title": "Value",
                                 "description": "The value.",
                                 "default": 0.0,
@@ -190,8 +190,8 @@
                 "$id": "#/properties/Settings/items"
             }
         },
-        "SystemManufacturerDate": {
-            "$id": "#/properties/SystemManufacturerDate",
+        "system_manufacturer_date": {
+            "$id": "#/properties/system_manufacturer_date",
             "type": "string",
             "title": "System manufacturer date",
             "description": "The date in which the system was manufactured.",
@@ -200,8 +200,8 @@
                 ""
             ]
         },
-        "SystemManufacturer": {
-            "$id": "#/properties/SystemManufacturer",
+        "system_manufacturer": {
+            "$id": "#/properties/system_manufacturer",
             "type": "string",
             "title": "System manufacturer",
             "description": "The system manufacturer.",
@@ -210,8 +210,8 @@
                 ""
             ]
         },
-        "SystemNumber": {
-            "$id": "#/properties/SystemNumber",
+        "system_number": {
+            "$id": "#/properties/system_number",
             "type": "string",
             "title": "System number",
             "description": "The system number",
@@ -220,8 +220,8 @@
                 ""
             ]
         },
-        "SystemSerial": {
-            "$id": "#/properties/SystemSerial",
+        "system_serial": {
+            "$id": "#/properties/system_serial",
             "type": "string",
             "title": "System serial",
             "description": "System serial",
@@ -230,8 +230,8 @@
                 ""
             ]
         },
-        "SystemType": {
-            "$id": "#/properties/SystemType",
+        "system_type": {
+            "$id": "#/properties/system_type",
             "type": "string",
             "title": "System type",
             "description": "The type of the system.",
@@ -240,8 +240,8 @@
                 ""
             ]
         },
-        "UseRlt": {
-            "$id": "#/properties/UseRlt",
+        "use_rlt": {
+            "$id": "#/properties/use_rlt",
             "type": "boolean",
             "title": "Use Rlt",
             "description": "If Rlt is enabled?",
