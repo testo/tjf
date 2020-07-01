@@ -1,0 +1,4 @@
+openapi-generator-cli.jar
+__pycache__
+.hypothesis/
+junit.xml

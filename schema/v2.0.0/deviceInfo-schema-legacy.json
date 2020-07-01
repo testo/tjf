@@ -1,0 +1,77 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "Branch": "local version",
+            "app": "t300",
+            "local_version": true,
+            "version": "9.22.0.0",
+            "version_hash": 0
+        }
+    ],
+    "required": [
+        "Branch",
+        "app",
+        "local_version",
+        "version",
+        "version_hash"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "Branch": {
+            "$id": "#/properties/Branch",
+            "type": "string",
+            "title": "The Branch schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "local version"
+            ]
+        },
+        "app": {
+            "$id": "#/properties/app",
+            "type": "string",
+            "title": "The app schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "t300"
+            ]
+        },
+        "local_version": {
+            "$id": "#/properties/local_version",
+            "type": "boolean",
+            "title": "The local_version schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                true
+            ]
+        },
+        "version": {
+            "$id": "#/properties/version",
+            "type": "string",
+            "title": "The version schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "9.22.0.0"
+            ]
+        },
+        "version_hash": {
+            "$id": "#/properties/version_hash",
+            "type": "integer",
+            "title": "The version_hash schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                0
+            ]
+        }
+    }
+}

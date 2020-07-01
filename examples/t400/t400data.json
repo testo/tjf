@@ -1,0 +1,211 @@
+{
+    "additionalMeasurementInformation": [
+        {
+            "description": "a1b7206b-41fe-44b5-b361-301c20674dd1",
+            "name": "measurementuuid"
+        },
+        {
+            "name": "appVersion",
+            "value": "13.23.0.51604"
+        },
+        {
+            "name": "note",
+            "value": ""
+        }
+    ],
+    "channels": [
+        {
+            "additionalData": [
+                {
+                    "name": "measType",
+                    "value": "Pressure"
+                },
+                {
+                    "name": "baseUnit",
+                    "value": "Pa"
+                },
+                {
+                    "name": "displayUnit",
+                    "value": "hPa"
+                },
+                {
+                    "name": "visible",
+                    "value": true
+                },
+                {
+                    "name": "serial",
+                    "value": "61518740"
+                },
+                {
+                    "name": "description",
+                    "value": "Pressure"
+                },
+                {
+                    "name": "mainChannel",
+                    "value": false
+                }
+            ],
+            "unit": {
+                "name": "Pa"
+            },
+            "values": [
+                {
+                    "timeStamp": "1592552029",
+                    "value": 91950.0
+                },
+                {
+                    "description": "TotalMean",
+                    "timeStamp": "1592552030",
+                    "value": 91950.0
+                },
+                {
+                    "description": "TotalMinimum",
+                    "timeStamp": "1592552030",
+                    "value": 91950.0
+                },
+                {
+                    "description": "TotalMaximum",
+                    "timeStamp": "1592552030",
+                    "value": 91950.0
+                }
+            ]
+        },
+        {
+            "additionalData": [
+                {
+                    "name": "measType",
+                    "value": "DifferentialPressure"
+                },
+                {
+                    "name": "baseUnit",
+                    "value": "Pa"
+                },
+                {
+                    "name": "displayUnit",
+                    "value": "hPa"
+                },
+                {
+                    "name": "visible",
+                    "value": true
+                },
+                {
+                    "name": "serial",
+                    "value": "61518740"
+                },
+                {
+                    "name": "description",
+                    "value": "DifferentialPressure"
+                },
+                {
+                    "name": "mainChannel",
+                    "value": false
+                }
+            ],
+            "unit": {
+                "name": "Pa"
+            },
+            "values": [
+                {
+                    "timeStamp": "1592552029",
+                    "value": -8.10
+                },
+                {
+                    "description": "TotalMean",
+                    "timeStamp": "1592552030",
+                    "value": -8.10
+                },
+                {
+                    "description": "TotalMinimum",
+                    "timeStamp": "1592552030",
+                    "value": -8.10
+                },
+                {
+                    "description": "TotalMaximum",
+                    "timeStamp": "1592552030",
+                    "value": -8.10
+                }
+            ]
+        }
+    ],
+    "device": [
+        {
+            "additionalData": [],
+            "boardIndex": 0,
+            "firmwareVersion": "1.1.4",
+            "measCycle": 0,
+            "measTypes": [],
+            "name": "testo 400",
+            "partNumber": "0560 0400",
+            "serial": "61518816"
+        },
+        {
+            "additionalData": [
+                {
+                    "name": "calibrationDate_DifferentialPressure",
+                    "value": "0"
+                },
+                {
+                    "name": "calibrationNotification_DifferentialPressure",
+                    "value": "0"
+                },
+                {
+                    "name": "calibrationCertificateNumber_DifferentialPressure",
+                    "value": ""
+                },
+                {
+                    "name": "adjustmentData_DifferentialPressure"
+                }
+            ],
+            "boardIndex": 2,
+            "firmwareVersion": "1.1.4",
+            "measCycle": 1000,
+            "measTypes": [
+                "TemperatureTC1",
+                "TemperatureTC2",
+                "TemperatureNTC1",
+                "TemperatureNTC2",
+                "Pressure",
+                "DifferentialPressure"
+            ],
+            "name": "",
+            "partNumber": "0560 0400",
+            "serial": "61518740"
+        }
+    ],
+    "organisation": {
+        "city": "79822 Titisee-Neustadt",
+        "country": "Germany",
+        "email": "info@testo.de",
+        "fax": "+49 7653 681-701",
+        "homepage": "www.testo.com",
+        "logo": "0d1ad806-d5e0-40c3-b77d-273e7b00344e.jpg",
+        "name": "t400 Video Shooting Corp.",
+        "personOfContact": "PM Tobias",
+        "phone": "+49 7653 681-700",
+        "street": "Celsiusstraße 2"
+    },
+    "properties": [
+        {
+            "name": "MeasurementType",
+            "values": [
+                {
+                    "value": "Continuous"
+                }
+            ]
+        },
+        {
+            "name": "MeasCycle",
+            "values": [
+                {
+                    "value": "1"
+                }
+            ]
+        }
+    ],
+    "schemaVersion": "1.0.6",
+    "timeStamp": "1592552030",
+    "type": {
+        "id": "BasicViewClimateApplication",
+        "name": "Standardansicht"
+    }
+}
