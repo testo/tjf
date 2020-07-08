@@ -17,8 +17,6 @@
     ],
     "required": [
         "name",
-        "serial",
-        "firmwareVersion",
         "app",
         "appVersion"
     ],
