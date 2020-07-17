@@ -19,14 +19,14 @@ paths:
           description: Unexpected error
   /customer:
     get:
-      summary: Returns a JSON object with the customer
+      summary: Returns a JSON object with the contacts
       responses:
         '200':
           description: OK
           content:
             application/json:
               schema:
-                $ref: '../schema/v2.0.0/customer-schema-v2.0.0.json'
+                $ref: '../schema/v2.0.0/contact-schema-v2.0.0.json'
         default:
           description: Unexpected error
   /measuringPoints:
