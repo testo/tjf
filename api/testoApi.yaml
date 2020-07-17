@@ -17,7 +17,7 @@ paths:
                 $ref: '../schema/v2.0.0/deviceInfo-schema-legacy.json'
         default:
           description: Unexpected error
-  /customer:
+  /contact:
     get:
       summary: Returns a JSON object with the contacts
       responses:
