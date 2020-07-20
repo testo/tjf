@@ -2,8 +2,8 @@
     "$schema": "http://json-schema.org/draft-07/schema",
     "$id": "http://example.com/example.json",
     "type": "object",
-    "title": "Customer Schema",
-    "description": "The schema that contains information about the customer",
+    "title": "Contact Schema",
+    "description": "The schema that contains information about the contact",
     "default": {},
     "examples": [
         {
@@ -24,8 +24,7 @@
         }        
     ],
     "required": [
-        "name",
-        "uuid"
+        "name"
     ],
     "additionalProperties": true,
     "properties": {
