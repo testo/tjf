@@ -29,15 +29,35 @@ paths:
                 $ref: '../schema/v2.0.0/contact-schema-v2.0.0.json'
         default:
           description: Unexpected error
-  /measuringPoints:
+    post:
+      summary: Adds a Contact object
+      requestBody:
+        description: Object of the Contact object
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '../schema/v2.0.0/contact-schema-v2.0.0.json'
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+  /contact/{uuid}:
     get:
-      summary: Returns a JSON object with the measuring points
+      summary: Returns a JSON object of the contact by UUID
+      parameters:
+        - name: uuid
+          in: path
+          description: UUID
+          required: true
+          schema:
+            type: string
+            format: uuid
       responses:
         '200':
           description: OK
           content:
             application/json:
               schema:
-                $ref: '../schema/v2.0.0/measuringpoint-schema-v2.0.0.json'
-        default:
-          description: Unexpected error
+                $ref: '../schema/v2.0.0/contact-schema-v2.0.0.json'

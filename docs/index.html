@@ -184,7 +184,7 @@ font-style: italic;
     <div class="app-desc">More information: <a href="https://openapi-generator.tech">https://openapi-generator.tech</a></div>
     <div class="app-desc">Contact Info: <a href="team@openapitools.org">team@openapitools.org</a></div>
     <div class="app-desc">Version: 1.0</div>
-    <div class="app-desc">BasePath:</div>
+    <div class="app-desc">BasePath:/</div>
     <div class="license-info">All rights reserved</div>
     <div class="license-url">http://apache.org/licenses/LICENSE-2.0.html</div>
   <h2>Access</h2>
@@ -196,16 +196,18 @@ font-style: italic;
   <div class="method-summary"></div>
   <h4><a href="#Default">Default</a></h4>
   <ul>
-  <li><a href="#customerGet"><code><span class="http-method">get</span> /customer</code></a></li>
+  <li><a href="#contactGet"><code><span class="http-method">get</span> /contact</code></a></li>
+  <li><a href="#contactPost"><code><span class="http-method">post</span> /contact</code></a></li>
+  <li><a href="#contactUuidGet"><code><span class="http-method">get</span> /contact/{uuid}</code></a></li>
   <li><a href="#deviceInfoGet"><code><span class="http-method">get</span> /deviceInfo</code></a></li>
   </ul>
 
   <h1><a name="Default">Default</a></h1>
-  <div class="method"><a name="customerGet"/>
+  <div class="method"><a name="contactGet"/>
     <div class="method-path">
     <a class="up" href="#__Methods">Up</a>
-    <pre class="get"><code class="huge"><span class="http-method">get</span> /customer</code></pre></div>
-    <div class="method-summary">Returns a JSON object with the customer (<span class="nickname">customerGet</span>)</div>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /contact</code></pre></div>
+    <div class="method-summary">Returns a JSON object with the contacts (<span class="nickname">contactGet</span>)</div>
     <div class="method-notes"></div>
 
 
@@ -216,7 +218,7 @@ font-style: italic;
 
     <h3 class="field-label">Return type</h3>
     <div class="return-type">
-      <a href="#customer-schema-v2">customer-schema-v2</a>
+      <a href="#contact-schema-v2">contact-schema-v2</a>
       
     </div>
 
@@ -225,16 +227,19 @@ font-style: italic;
     <h3 class="field-label">Example data</h3>
     <div class="example-data-content-type">Content-Type: application/json</div>
     <pre class="example"><code>{
-  "firstName" : "firstName",
-  "country" : "country",
-  "address" : "address",
-  "town" : "town",
-  "name" : "name",
-  "postcode" : 0,
-  "phonenumber" : "phonenumber",
-  "contactPerson" : "contactPerson",
-  "customerNumber" : 6,
-  "email" : "email"
+  "PersonOfContact" : "PersonOfContact",
+  "Homepage" : "Homepage",
+  "Email" : "Email",
+  "City" : "City",
+  "type" : "type",
+  "uuid" : "uuid",
+  "Logo" : "Logo",
+  "Name" : "Name",
+  "CustomerNumber" : "CustomerNumber",
+  "Phone" : "Phone",
+  "Country" : "Country",
+  "Street" : "Street",
+  "Fax" : "Fax"
 }</code></pre>
 
     <h3 class="field-label">Produces</h3>
@@ -247,10 +252,107 @@ font-style: italic;
     <h3 class="field-label">Responses</h3>
     <h4 class="field-label">200</h4>
     OK
-        <a href="#customer-schema-v2">customer-schema-v2</a>
+        <a href="#contact-schema-v2">contact-schema-v2</a>
     <h4 class="field-label">default</h4>
     Unexpected error
         <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="contactPost"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /contact</code></pre></div>
+    <div class="method-summary">Adds a Contact object (<span class="nickname">contactPost</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">request_body <a href="#object">object</a> (required)</div>
+
+      <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+
+    </div>  <!-- field-items -->
+
+
+
+
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    OK
+        <a href="#"></a>
+    <h4 class="field-label">400</h4>
+    Bad Request
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="contactUuidGet"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /contact/{uuid}</code></pre></div>
+    <div class="method-summary">Returns a JSON object of the contact by UUID (<span class="nickname">contactUuidGet</span>)</div>
+    <div class="method-notes"></div>
+
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">uuid (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; UUID default: null format: uuid</div>
+    </div>  <!-- field-items -->
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#contact-schema-v2">contact-schema-v2</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "PersonOfContact" : "PersonOfContact",
+  "Homepage" : "Homepage",
+  "Email" : "Email",
+  "City" : "City",
+  "type" : "type",
+  "uuid" : "uuid",
+  "Logo" : "Logo",
+  "Name" : "Name",
+  "CustomerNumber" : "CustomerNumber",
+  "Phone" : "Phone",
+  "Country" : "Country",
+  "Street" : "Street",
+  "Fax" : "Fax"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    OK
+        <a href="#contact-schema-v2">contact-schema-v2</a>
   </div> <!-- method -->
   <hr/>
   <div class="method"><a name="deviceInfoGet"/>
@@ -306,24 +408,27 @@ font-style: italic;
 
   <h3>Table of Contents</h3>
   <ol>
-    <li><a href="#customer-schema-v2"><code>customer-schema-v2</code> - Customer schema</a></li>
+    <li><a href="#contact-schema-v2"><code>contact-schema-v2</code> - Contact Schema</a></li>
     <li><a href="#deviceInfo-schema-legacy"><code>deviceInfo-schema-legacy</code> - The root schema</a></li>
   </ol>
 
   <div class="model">
-    <h3><a name="customer-schema-v2"><code>customer-schema-v2</code> - Customer schema</a> <a class="up" href="#__Models">Up</a></h3>
-    <div class='model-description'>The schema contains the information about the customer.</div>
+    <h3><a name="contact-schema-v2"><code>contact-schema-v2</code> - Contact Schema</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'>The schema that contains information about the contact</div>
     <div class="field-items">
-      <div class="param">name </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The name of the customer of the company. </div>
-<div class="param">firstName (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The first name of the customer. </div>
-<div class="param">address (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The street and house number of the company/customer. </div>
-<div class="param">postcode (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> The postcode of the town. </div>
-<div class="param">town (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The name of the town. </div>
-<div class="param">country (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The country where the company/customer is located. </div>
-<div class="param">phonenumber (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The phone number of the customer/company. </div>
-<div class="param">email (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The email of the customer/company. </div>
-<div class="param">contactPerson (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The name of the contact person. </div>
-<div class="param">customerNumber (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> The customer number. </div>
+      <div class="param">City (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The name of the city. </div>
+<div class="param">Country (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The country where the company/customer is located. </div>
+<div class="param">CustomerNumber (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The customer number. </div>
+<div class="param">Email (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The email of the customer/company. </div>
+<div class="param">Fax (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The fax number of the customer/company </div>
+<div class="param">Homepage (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The homepage of the customer/company. </div>
+<div class="param">Logo (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The name of the logo file from the contact. </div>
+<div class="param">Name </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The name of the customer/company. </div>
+<div class="param">PersonOfContact (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The person of contact. </div>
+<div class="param">Phone (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The phone number of the customer/company. </div>
+<div class="param">Street (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The street where the company is located. </div>
+<div class="param">type (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">uuid (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The UUID of the customer. </div>
     </div>  <!-- field-items -->
   </div>
   <div class="model">
