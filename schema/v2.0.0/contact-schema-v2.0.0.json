@@ -7,28 +7,27 @@
     "default": {},
     "examples": [
         {
-            "city": "Titisee-Neustadt",
-            "country": "Germany",
-            "customer_number": 0,
-            "email": "info@testo.de",
-            "fax": "+49 7653 681-701",
-            "first_name": "Christian",
-            "homepage": "www.testo.com",
-            "name": "t400 Video Shooting Corp.",
-            "person_of_contact": "PM Tobias",
-            "phone": "+49 7653 681-700",
-            "postcode": 79822,
-            "street": "Celsiusstraße 2",
+            "City": "79822 Titisee-Neustadt",
+            "Country": "Germany",
+            "CustomerNumber": "0",
+            "Email": "info@testo.de",
+            "Fax": "+49 7653 681-701",
+            "Homepage": "www.testo.com",
+            "Logo": "logo.jpg",
+            "Name": "t400 Video Shooting Corp.",
+            "PersonOfContact": "PM Tobias",
+            "Phone": "+49 7653 681-700",
+            "Street": "Celsiusstraße 2",
             "type": "Contact",
             "uuid": "4a3b9363-7583-49cd-8cc9-9c45c81d3cdc"
         }        
     ],
     "required": [
-        "name"
+        "Name"
     ],
     "additionalProperties": true,
     "properties": {
-        "city": {
+        "City": {
             "$id": "#/properties/city",
             "type": "string",
             "title": "City",
@@ -38,7 +37,7 @@
                 "79822 Titisee-Neustadt"
             ]
         },
-        "country": {
+        "Country": {
             "$id": "#/properties/country",
             "type": "string",
             "title": "Country",
@@ -48,9 +47,9 @@
                 "Germany"
             ]
         },
-        "customer_number": {
+        "CustomerNumber": {
             "$id": "#/properties/customer_number",
-            "type": "integer",
+            "type": "string",
             "title": "Customer number",
             "description": "The customer number.",
             "default": "",
@@ -58,7 +57,7 @@
                 ""
             ]
         },
-        "email": {
+        "Email": {
             "$id": "#/properties/email",
             "type": "string",
             "title": "Email",
@@ -68,7 +67,7 @@
                 "info@testo.de"
             ]
         },
-        "fax": {
+        "Fax": {
             "$id": "#/properties/fax",
             "type": "string",
             "title": "Fax",
@@ -78,17 +77,7 @@
                 "+49 7653 681-701"
             ]
         },
-        "first_name": {
-            "$id": "#/properties/first_name",
-            "type": "string",
-            "title": "First name",
-            "description": "The first name of the customer.",
-            "default": "",
-            "examples": [
-                "Christian"
-            ]
-        },
-        "homepage": {
+        "Homepage": {
             "$id": "#/properties/homepage",
             "type": "string",
             "title": "Homepage",
@@ -98,7 +87,17 @@
                 "www.testo.com"
             ]
         },
-        "name": {
+        "Logo": {
+            "$id": "#/properties/logo",
+            "type": "string",
+            "title": "Logo",
+            "description": "The name of the logo file from the contact.",
+            "default": "",
+            "examples": [
+                "logo.jpg"
+            ]
+        },
+        "Name": {
             "$id": "#/properties/name",
             "type": "string",
             "title": "Name",
@@ -108,7 +107,7 @@
                 "t400 Video Shooting Corp."
             ]
         },
-        "person_of_contact": {
+        "PersonOfContact": {
             "$id": "#/properties/person_of_contact",
             "type": "string",
             "title": "Person of contact",
@@ -118,7 +117,7 @@
                 "PM Tobias"
             ]
         },
-        "phone": {
+        "Phone": {
             "$id": "#/properties/phone",
             "type": "string",
             "title": "Phone number",
@@ -128,17 +127,7 @@
                 "+49 7653 681-700"
             ]
         },
-        "postcode": {
-            "$id": "#/properties/postcode",
-            "type": "integer",
-            "title": "Customer number",
-            "description": "The customer number.",
-            "default": "",
-            "examples": [
-                ""
-            ]
-        },
-        "street": {
+        "Street": {
             "$id": "#/properties/street",
             "type": "string",
             "title": "Street",
