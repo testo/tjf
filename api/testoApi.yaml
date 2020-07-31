@@ -61,7 +61,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '../schema/v2.0.0/deviceInfo-schema-legacy.json'
+                $ref: '../schema/v2.0.0/deviceInfo-schema-v2.0.0.json'
         default:
           description: Unexpected error
   /contact:
