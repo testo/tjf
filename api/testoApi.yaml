@@ -5,9 +5,56 @@ info:
 servers:
   - url: https://{location}
 paths:
+  /o:
+    get:
+      summary: Returns the result of the last measurement
+      tags:
+        - t300
+      responses:
+        '200':
+          description: OK
+          content:
+            application/xml:
+              schema:
+                type: object
+        default:
+          description: Unexpected error
+    post:
+      summary: Starts a measurement
+      tags:
+        - t300
+      requestBody:
+        description: XML content to select the measurements
+        required: true
+        content:
+          application/xml:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: OK
+        default:
+          description: Unexpected error
+  /data:
+    get:
+      summary: Returns the TJF object of the current measurement
+      tags:
+        - t300
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+        default:
+          description: Unexpected error
   /deviceInfo:
     get:
       summary: Returns a JSON object with the device information
+      tags:
+        - t300
+        - t400
       responses:
         '200':
           description: OK
@@ -20,6 +67,8 @@ paths:
   /contact:
     get:
       summary: Returns a JSON object with the contacts
+      tags:
+        - t400
       responses:
         '200':
           description: OK
@@ -31,6 +80,8 @@ paths:
           description: Unexpected error
     post:
       summary: Adds a Contact object
+      tags:
+        - t400
       requestBody:
         description: Object of the Contact object
         required: true
@@ -46,6 +97,8 @@ paths:
   /contact/{uuid}:
     get:
       summary: Returns a JSON object of the contact by UUID
+      tags:
+        - t400
       parameters:
         - name: uuid
           in: path
