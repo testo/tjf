@@ -5,7 +5,7 @@ node("linux&&!LINUX_DEDEV10UBB64V16&&!LINUX_DEDEV10UBB64V17")
     stage('SCM') {
         checkout scm
     }
-    stage('Build documentation') {
+    stage('Generate documentation') {
         sh """
             cd tjf
             chmod 777 ./create_docs.sh
