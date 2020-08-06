@@ -194,7 +194,14 @@ font-style: italic;
 
   <h3>Table of Contents </h3>
   <div class="method-summary"></div>
-  <h4><a href="#Default">Default</a></h4>
+  <h4><a href="#T300">T300</a></h4>
+  <ul>
+  <li><a href="#dataGet"><code><span class="http-method">get</span> /data</code></a></li>
+  <li><a href="#deviceInfoGet"><code><span class="http-method">get</span> /deviceInfo</code></a></li>
+  <li><a href="#oGet"><code><span class="http-method">get</span> /o</code></a></li>
+  <li><a href="#oPost"><code><span class="http-method">post</span> /o</code></a></li>
+  </ul>
+  <h4><a href="#T400">T400</a></h4>
   <ul>
   <li><a href="#contactGet"><code><span class="http-method">get</span> /contact</code></a></li>
   <li><a href="#contactPost"><code><span class="http-method">post</span> /contact</code></a></li>
@@ -202,7 +209,177 @@ font-style: italic;
   <li><a href="#deviceInfoGet"><code><span class="http-method">get</span> /deviceInfo</code></a></li>
   </ul>
 
-  <h1><a name="Default">Default</a></h1>
+  <h1><a name="T300">T300</a></h1>
+  <div class="method"><a name="dataGet"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /data</code></pre></div>
+    <div class="method-summary">Returns the TJF object of the current measurement (<span class="nickname">dataGet</span>)</div>
+    <div class="method-notes"></div>
+
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      
+      Object
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    OK
+        <a href="#Object">Object</a>
+    <h4 class="field-label">default</h4>
+    Unexpected error
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="deviceInfoGet"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /deviceInfo</code></pre></div>
+    <div class="method-summary">Returns a JSON object with the device information (<span class="nickname">deviceInfoGet</span>)</div>
+    <div class="method-notes"></div>
+
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#deviceInfo-schema-v2">deviceInfo-schema-v2</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "app" : "app",
+  "localVersion" : false,
+  "appVersion" : "appVersion",
+  "boardIndex" : 6,
+  "schemaVersion" : "schemaVersion",
+  "deviceIdentifier" : "deviceIdentifier",
+  "serial" : "serial",
+  "name" : "name",
+  "lastServiceDate" : "lastServiceDate",
+  "firmwareVersion" : "firmwareVersion",
+  "branch" : "branch",
+  "appVersionHash" : 0
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    OK
+        <a href="#deviceInfo-schema-v2">deviceInfo-schema-v2</a>
+    <h4 class="field-label">default</h4>
+    Unexpected error
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="oGet"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /o</code></pre></div>
+    <div class="method-summary">Returns the result of the last measurement (<span class="nickname">oGet</span>)</div>
+    <div class="method-notes"></div>
+
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      
+      Object
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/xml</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    OK
+        <a href="#Object">Object</a>
+    <h4 class="field-label">default</h4>
+    Unexpected error
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="oPost"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /o</code></pre></div>
+    <div class="method-summary">Starts a measurement (<span class="nickname">oPost</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/xml</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#object">object</a> (required)</div>
+
+      <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+
+    </div>  <!-- field-items -->
+
+
+
+
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    OK
+        <a href="#"></a>
+    <h4 class="field-label">default</h4>
+    Unexpected error
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <h1><a name="T400">T400</a></h1>
   <div class="method"><a name="contactGet"/>
     <div class="method-path">
     <a class="up" href="#__Methods">Up</a>
@@ -370,7 +547,7 @@ font-style: italic;
 
     <h3 class="field-label">Return type</h3>
     <div class="return-type">
-      <a href="#deviceInfo-schema-legacy">deviceInfo-schema-legacy</a>
+      <a href="#deviceInfo-schema-v2">deviceInfo-schema-v2</a>
       
     </div>
 
@@ -380,10 +557,17 @@ font-style: italic;
     <div class="example-data-content-type">Content-Type: application/json</div>
     <pre class="example"><code>{
   "app" : "app",
-  "local_version" : false,
-  "Branch" : "Branch",
-  "version_hash" : 0,
-  "version" : "version"
+  "localVersion" : false,
+  "appVersion" : "appVersion",
+  "boardIndex" : 6,
+  "schemaVersion" : "schemaVersion",
+  "deviceIdentifier" : "deviceIdentifier",
+  "serial" : "serial",
+  "name" : "name",
+  "lastServiceDate" : "lastServiceDate",
+  "firmwareVersion" : "firmwareVersion",
+  "branch" : "branch",
+  "appVersionHash" : 0
 }</code></pre>
 
     <h3 class="field-label">Produces</h3>
@@ -396,7 +580,7 @@ font-style: italic;
     <h3 class="field-label">Responses</h3>
     <h4 class="field-label">200</h4>
     OK
-        <a href="#deviceInfo-schema-legacy">deviceInfo-schema-legacy</a>
+        <a href="#deviceInfo-schema-v2">deviceInfo-schema-v2</a>
     <h4 class="field-label">default</h4>
     Unexpected error
         <a href="#"></a>
@@ -409,7 +593,7 @@ font-style: italic;
   <h3>Table of Contents</h3>
   <ol>
     <li><a href="#contact-schema-v2"><code>contact-schema-v2</code> - Contact Schema</a></li>
-    <li><a href="#deviceInfo-schema-legacy"><code>deviceInfo-schema-legacy</code> - The root schema</a></li>
+    <li><a href="#deviceInfo-schema-v2"><code>deviceInfo-schema-v2</code> - Device Schema</a></li>
   </ol>
 
   <div class="model">
@@ -432,14 +616,21 @@ font-style: italic;
     </div>  <!-- field-items -->
   </div>
   <div class="model">
-    <h3><a name="deviceInfo-schema-legacy"><code>deviceInfo-schema-legacy</code> - The root schema</a> <a class="up" href="#__Models">Up</a></h3>
-    <div class='model-description'>The root schema comprises the entire JSON document.</div>
+    <h3><a name="deviceInfo-schema-v2"><code>deviceInfo-schema-v2</code> - Device Schema</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'>The schema contains the information about the device and the application.</div>
     <div class="field-items">
-      <div class="param">Branch </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> An explanation about the purpose of this instance. </div>
-<div class="param">app </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> An explanation about the purpose of this instance. </div>
-<div class="param">local_version </div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span> An explanation about the purpose of this instance. </div>
-<div class="param">version </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> An explanation about the purpose of this instance. </div>
-<div class="param">version_hash </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> An explanation about the purpose of this instance. </div>
+      <div class="param">schemaVersion (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The version of the schema that this exported data set validates against </div>
+<div class="param">name </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The name of the device. </div>
+<div class="param">serial (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The serialnumber of the device. </div>
+<div class="param">firmwareVersion (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The firmware version of the device. </div>
+<div class="param">app </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The name of the application used. </div>
+<div class="param">appVersion </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The App Version used. </div>
+<div class="param">lastServiceDate (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The date when the last service occured. </div>
+<div class="param">branch (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The branch used. </div>
+<div class="param">localVersion (optional)</div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span> Gives the information if a local version is used. </div>
+<div class="param">appVersionHash (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> A hash value over the app version. </div>
+<div class="param">deviceIdentifier (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The identifier for the given device. </div>
+<div class="param">boardIndex (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Gives the information which board is used. </div>
     </div>  <!-- field-items -->
   </div>
   </body>

@@ -23,6 +23,14 @@ Dev2Dev is included into the following Apps / Devcies:
 | testo 300 | t300 |
 | testo 330i App | t330i |
 
+These apps use a static UDP-Broadcast Port: 53955
+
+Dev2Dev over Bluetooth Low Energy (BLE) is included into the following Apps / Devices:
+
+| App / Device     | Devices |
+| --------- | -----|
+| testo 300 | t300 |
+
 ## Extended schema
 The extended schema is designed to hold all possibly necessary data a measurement can contain.
 
