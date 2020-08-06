@@ -1,9 +1,11 @@
 openapi: '3.0.2'
 info:
-  title: General Testo API
+  title: Testo Apps HTTP API
   version: '1.0'
+  description: API description of testo Smart, testo 300 and testo 400 HTTP API
 servers:
-  - url: https://{location}
+  - url: http://device-ip-address.example.com/
+    description: Replace with the IP address of the Testo device or phone
 paths:
   /o:
     get:

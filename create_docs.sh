@@ -4,5 +4,5 @@ wget https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/4.3.1
 fi
 java -jar openapi-generator-cli.jar generate \
   -i api/testoApi.yaml \
-  -g html \
+  -g html2 \
   -o docs/
