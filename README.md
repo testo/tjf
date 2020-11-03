@@ -31,6 +31,30 @@ Dev2Dev over Bluetooth Low Energy (BLE) is included into the following Apps / De
 | --------- | -----|
 | testo 300 | t300 |
 
+## Inter App Communication / App to App interface (A2A)
+Most Testo apps can be called via an app to app interface (A2A) and report data back to the caller. This interface is available in the following apps and devices:
+
+| testo Combustion | Application ID | Android | iOS |
+| ---------------- | -------------- | ------- | --- |
+| testo 330i App   | testot330i | Yes | Yes |
+| testo 300        | testot330i | Yes | No |
+| testo 400        | testosmartprobes | Yes | No |
+| testo Smart      | testosmartprobes | Yes | Yes |
+
+### Workflow
+In the following examples `testosmartprobes` is used as a placeholder. Replace it with the proper application ID according to the table above. `com.example.demoapplication` is a placeholder for the app identifier of the caller.
+1. Open `testosmartprobes://start?bundleid=com.example.demoapplication` via your application
+2. Testo app will open, the measurement is performed (or a saved measurement is opened) and the export via JSON/TJF is selected.
+3. Test app opens an url like this: `testoapp+com.example.demoapplication://data?json=[base64_encoded_json_data]`.
+4. Caller app receives the url and decodes the data. **Important:** to make the base64 URL compatible the testo app will replace some special characters, make sure to revert this after you receive the data. See the table below for more details.
+
+| Special character | Replacement in URL |
+| ----------------- | ------------------ |
+| Plus `+`          | Minus `-`          |
+| Forward-Slash `/` | Underscore `_`     |
+| Equal Sign `=`    | Colon `,`          | 
+
+
 ## Extended schema
 The extended schema is designed to hold all possibly necessary data a measurement can contain.
 
