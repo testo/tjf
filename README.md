@@ -1,11 +1,8 @@
-[TOC]
-
 # tjf - Testo JSON format
 This repository contains the schema definitions of the Testo JSON format (tjf).
-The tjf is used for App to App (App2App) and the Device to Device (Dev2Dev) communication.
+The tjf is used for app to app (App2App) and device to device (Dev2Dev) communication with testo apps and devices.
 
-App2App is included into the following Apps:
-
+App2App is included into the following apps:
 
 | App      | Devices |
 | --------- | -----|
@@ -16,7 +13,7 @@ App2App is included into the following Apps:
 | testo 420 App | t420 |
 | testo Refrigeration | t550, t557 (generation since 2015) |
 
-Dev2Dev is included into the following Apps / Devcies:
+Dev2Dev is included into the following apps / devices:
 
 | App / Device     | Devices |
 | --------- | -----|
@@ -25,14 +22,14 @@ Dev2Dev is included into the following Apps / Devcies:
 
 These apps use a static UDP-Broadcast Port: 53955
 
-Dev2Dev over Bluetooth Low Energy (BLE) is included into the following Apps / Devices:
+Dev2Dev over Bluetooth Low Energy (BLE) is included into the following apps / devices:
 
 | App / Device     | Devices |
 | --------- | -----|
 | testo 300 | t300 |
 
-## Inter App Communication / App to App interface (A2A)
-Most Testo apps can be called via an app to app interface (A2A) and report data back to the caller. This interface is available in the following apps and devices:
+## Inter App Communication / App to App interface (App2App)
+Most testo apps can be called via an app to app interface (App2App) and report data back to the caller. This interface is available in the following apps and devices:
 
 | testo Combustion | Application ID | Android | iOS |
 | ---------------- | -------------- | ------- | --- |
@@ -45,7 +42,7 @@ Most Testo apps can be called via an app to app interface (A2A) and report data 
 In the following examples `testosmartprobes` is used as a placeholder. Replace it with the proper application ID according to the table above. `com.example.demoapplication` is a placeholder for the app identifier of the caller.
 1. Open `testosmartprobes://start?bundleid=com.example.demoapplication` via your application
 2. Testo app will open, the measurement is performed (or a saved measurement is opened) and the export via JSON/TJF is selected.
-3. Test app opens an url like this: `testoapp+com.example.demoapplication://data?json=[base64_encoded_json_data]`.
+3. Testo app opens an url like this: `testoapp+com.example.demoapplication://data?json=[base64_encoded_json_data]`.
 4. Caller app receives the url and decodes the data. **Important:** to make the base64 URL compatible the testo app will replace some special characters, make sure to revert this after you receive the data. See the table below for more details.
 
 | Special character | Replacement in URL |
