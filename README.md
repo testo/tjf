@@ -12,6 +12,8 @@ App2App is included into the following apps:
 | testo Combustion App iOS | t330 |
 | testo 420 App | t420 |
 | testo Refrigeration | t550, t557 (generation since 2015) |
+| testo Smart | All devices supported by the app |
+| testo 400 | t400 |
 
 Dev2Dev is included into the following apps / devices:
 
@@ -19,6 +21,7 @@ Dev2Dev is included into the following apps / devices:
 | --------- | -----|
 | testo 300 | t300 |
 | testo 330i App | t330i |
+| testo 400 | t400 |
 
 These apps use a static UDP-Broadcast Port: 53955
 
@@ -31,8 +34,9 @@ Dev2Dev over Bluetooth Low Energy (BLE) is included into the following apps / de
 ## Inter App Communication / App to App interface (App2App)
 Most testo apps can be called via an app to app interface (App2App) and report data back to the caller. This interface is available in the following apps and devices:
 
-| testo Combustion | Application ID | Android | iOS |
+| App | Application ID | Android | iOS |
 | ---------------- | -------------- | ------- | --- |
+| testo Combustion | testot330  | Yes | Yes |
 | testo 330i App   | testot330i | Yes | Yes |
 | testo 300        | testot330i | Yes | No |
 | testo 400        | testosmartprobes | Yes | No |
