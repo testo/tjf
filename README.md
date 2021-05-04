@@ -55,6 +55,8 @@ In the following examples `testosmartprobes` is used as a placeholder. Replace i
 | Forward-Slash `/` | Underscore `_`     |
 | Equal Sign `=`    | Colon `,`          | 
 
+## Questions ?
+For questions/comments to the developer please create an issue with the corresponding label! 
 
 ## Extended schema
 The extended schema is designed to hold all possibly necessary data a measurement can contain.
