@@ -169,7 +169,7 @@
                     "type": "string"
                 },
                 "value": {
-                    "description": "The actual measurement value as a number",
+                    "description": "The actual measurement value in displayed unit as a number",
                     "type": "number"
                 },
                 "exponent": {
