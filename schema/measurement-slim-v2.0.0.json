@@ -1,388 +1,407 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "A data object exported by Testo applications",
-    "id": "https://github.com/testo/tjf/tree/public/schema/measurement-slim-v2.0.0",
-    "type": "object",
-    "properties": {
-        "schemaVersion": {
-            "description": "The version of the schema that this exported data set validates against",
-            "type": "string",
-            "pattern": "^[1-9].[0-9].[0-9]$"
-        },
-        "channels": {
-            "description": "The measurement channels of all connected devices",
-            "type": "array",
-            "minItems": 1,
-            "items": { "$ref": "#/definitions/channel" }
-        },
-        "device": {
-            "description": "The array of objects describing the connected devices, or, in case the Testo application can only connect to a single device, an object",
-            "type": [ "object", "array" ],
-            "minItems": 1,
-            "items": { "$ref": "#/definitions/device" }
-        },
-        "customer": {
-          "description": "Customer contact information",
-          "type": "object",
-          "$ref": "#/definitions/contact"
-        },
-        "organisation": {
-          "description": "Organisation contact information",
-          "type": "object" ,
-          "$ref": "#/definitions/contact"
-        },
-        "measuringPoint": {
-          "description": "Measuring point of current measurement",
-          "type": "object",
-          "$ref": "#/definitions/measuringpoint"
-        },
-        "properties": {
-            "description": "Specific properties of the measurement described by the whole data set",
-            "type": "array",
-            "items": { "$ref": "#/definitions/measurementproperty" }
-        },
-        "timeStamp": {
-            "description": "The time when the whole data set was created, either as a unix timestamp or as a date in ISO string format",
-            "type": [ "number", "string" ]
-        },
-        "type": {
-            "description": "An object containing information about the type of measurement that is represented by the whole data set",
-            "type": "object",
-            "properties": {
-                "name": {
-                    "description": "The name of the current measurement application",
-                    "type": "string"
-                },
-                "id": {
-                    "description": "The id of the current measurement type",
-                    "type": "string",
-                    "optional": true
-                }
-            },
-            "required": [ "name" ]
-        },
-        "additionalMeasurementInformation": {
-            "description": "Additional properties that a measurement can have",
-            "type": "array",
-            "items": { "$ref": "#/definitions/measurementadditionalproperty" }
-        },
-        "images": {
-            "description": "name of images (not included in json but for example included in email when exported with T400)",
-            "type": "array",
-            "items": { "type": "string" },
-            "optional": true
-        }
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A data object exported by Testo applications",
+  "id": "https://github.com/testo/tjf/tree/public/schema/measurement-slim-v2.0.0",
+  "type": "object",
+  "properties": {
+    "channels": {
+      "description": "The measurement channels of all connected devices",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/channel"
+      }
     },
-    "anyOf": [
-        { "required": [ "channels", "device", "timeStamp", "type" ] },
-        { "required": [ "channels", "device", "properties", "timeStamp", "type" ] },
-        { "required": [ "channels", "device", "properties", "timeStamp", "type", "additionalMeasurementInformation" ] }
-    ],
-    "additionalProperties": false,
-    "definitions": {
-        "channelunit": {
-            "description": "An object describing the unit of a data channel",
-            "type": "object",
-            "properties": {
-                "name": {
-                    "description": "The unit of the channel as a string",
-                    "type": "string"
-                },
-                "xmlid": {
-                    "description": "ZIV mapping id",
-                    "type":"string",
-                    "optional": true
-                }
-            },
-            "required": [ "name" ],
-            "additionalProperties": false
+    "device": {
+      "description": "The array of objects describing the connected devices, or, in case the Testo application can only connect to a single device, an object",
+      "type": [
+        "object",
+        "array"
+      ],
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/device"
+      }
+    },
+    "customer": {
+      "description": "Customer contact information",
+      "type": "object",
+      "$ref": "#/definitions/contact"
+    },
+    "organisation": {
+      "description": "Organisation contact information",
+      "type": "object",
+      "$ref": "#/definitions/contact"
+    },
+    "measuringPoint": {
+      "description": "Measuring point of current measurement",
+      "type": "object",
+      "$ref": "#/definitions/measuringpoint"
+    },
+    "properties": {
+      "description": "Specific properties of the measurement described by the whole data set",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/measurementproperty"
+      }
+    },
+    "timeStamp": {
+      "description": "The time when the whole data set was created, either as a unix timestamp or as a date in ISO string format",
+      "type": [
+        "number",
+        "string"
+      ]
+    },
+    "type": {
+      "description": "An object containing information about the type of measurement that is represented by the whole data set",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the current measurement application",
+          "type": "string"
         },
-        "channeltype": {
-            "description": "An object describing the type of a data channel",
-            "type": "object",
-            "properties": {
-                "name": {
-                    "description": "The name of the channel as a string",
-                    "type": "string"
-                },
-                "description": {
-                    "description": "The displayed and translated name of the channel",
-                    "type": "string",
-                    "optional": true
-                },
-                "xmlid": {
-                    "description": "ZIV mapping id",
-                    "type":"string",
-                    "optional": true
-                }
-            },
-            "required": [ "name" ],
-            "additionalProperties": false
+        "id": {
+          "description": "The id of the current measurement type",
+          "type": "string",
+          "optional": true
+        }
+      },
+      "required": [
+        "name"
+      ]
+    },
+    "images": {
+      "description": "name of images (not included in json but for example included in email when exported with T400)",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "optional": true
+    }
+  },
+  "anyOf": [
+    {
+      "required": [
+        "channels",
+        "device",
+        "timeStamp",
+        "type"
+      ]
+    },
+    {
+      "required": [
+        "channels",
+        "device",
+        "properties",
+        "timeStamp",
+        "type"
+      ]
+    },
+    {
+      "required": [
+        "channels",
+        "device",
+        "properties",
+        "timeStamp",
+        "type",
+        "additionalMeasurementInformation"
+      ]
+    }
+  ],
+  "additionalProperties": false,
+  "definitions": {
+    "channelunit": {
+      "description": "An object describing the unit of a data channel",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The unit of the channel as a string",
+          "type": "string"
         },
-        "channel": {
-            "description": "An object describing a channel",
-            "type": "object",
-            "properties": {
-                "type": { "$ref": "#/definitions/channeltype" },
-                "unit": { "$ref": "#/definitions/channelunit" },
-                "additionalData": {
-                  "items": { "$ref": "#/definitions/additionalData" }
-                },
-                "values": {
-                    "description": "An array containing the measurement values",
-                    "type": "array",
-                    "minItems": 1,
-                    "items": { "$ref": "#/definitions/measurementvalue" }
-                }
-            },
-            "required": [ "type", "unit", "values" ],
-            "additionalProperties": false
+        "xmlid": {
+          "description": "ZIV mapping id",
+          "type": "string",
+          "optional": true
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "additionalProperties": false
+    },
+    "channeltype": {
+      "description": "An object describing the type of a data channel",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the channel as a string",
+          "type": "string"
         },
-        "measurementvalueadditionaldata": {
-            "description": "An object describing additional properties a measurement value can have, like dilution factors or flags like the NOX flag",
-            "type": "object",
-            "properties": {
-                "name": {
-                    "type": "string"
-                },
-                "description": {
-                    "description": "The value in textual form and appropriately translated",
-                    "type": "string"
-                },
-                "value": {
-                    "description": "The value that the property has",
-                    "type": [ "number", "boolean" ]
-                }
-            },
-            "anyOf": [
-                { "required": [ "name", "description" ] },
-                { "required": [ "name", "value" ] },
-                { "required": [ "name", "value", "description" ] }
-            ],
-            "additionalProperties": false
+        "description": {
+          "description": "The displayed and translated name of the channel",
+          "type": "string",
+          "optional": true
         },
-        "measurementvalue": {
-            "description": "An object describing a measurement value",
-            "type": "object",
-            "properties": {
-                "description": {
-                    "description": "The measurement value in string form, with appropriate formatting applied",
-                    "type": "string"
-                },
-                "value": {
-                    "description": "The actual measurement value in displayed unit as a number",
-                    "type": "number"
-                },
-                "exponent": {
-                    "description": "The precision of the measurement value (depending on the Testo application it can be either the value of x in 10^x or the number of decimal places)",
-                    "type": "integer"
-                },
-                "timeStamp": {
-                    "description": "The time when this measurement value was created, either as a unix timestamp or as a date in ISO string format",
-                    "type": [ "number", "string" ]
-                },
-                "status": {
-                    "description": "Status of measuement value: (e.g. invalid, overrange, underrange, empty)",
-                    "type": "string"
-                },
-                "additionalData": {
-                    "descriptions": "An array containing additional data objects a measurement value can have",
-                    "type": "array",
-                    "items": { "$ref": "#/definitions/measurementvalueadditionaldata" }
-                }
-            },
-            "anyOf": [
-                { "required": [ "timestamp" ] },
-                { "required": [ "value", "timeStamp" ] },
-                { "required": [ "description", "value", "timeStamp" ] },
-                { "required": [ "description", "value", "exponent", "timeStamp" ] },
-                { "required": [ "description", "value", "exponent", "timeStamp", "additionalData" ] }
-            ],
-            "additionalProperties": false
+        "xmlid": {
+          "description": "ZIV mapping id",
+          "type": "string",
+          "optional": true
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "additionalProperties": false
+    },
+    "channel": {
+      "description": "An object describing a channel",
+      "type": "object",
+      "properties": {
+        "type": {
+          "$ref": "#/definitions/channeltype"
         },
-        "measurementpropertyvalue": {
-            "description": "An object describing a value of a measurement property",
-            "type": "object",
-            "properties": {
-                "description": {
-                    "description": "The value in textual form including a unit",
-                    "type": "string"
-                },
-                "name": {
-                    "description": "The name of the value, usually a translated string",
-                    "type": "string"
-                },
-                "value": {
-                    "description": "The actual value",
-                    "type": [ "number", "string", "boolean" ]
-                },
-                "id": {
-                    "description": "A language agnostic id",
-                    "type": "string",
-                    "optional": true
-                },
-                "unit": {
-                    "description": "Unit of value",
-                    "type": "string",
-                    "optional": true
-                },
-                "baseUnit": {
-                    "description": "The iso unit of the value",
-                    "type": "string",
-                    "optional": true
-                },
-                "precision": {
-                    "description": "precision of value in value property",
-                    "type": "integer",
-                    "optional": true
-                }
-            },
-            "required": [ "value" ],
-            "additionalProperties": false
+        "unit": {
+          "$ref": "#/definitions/channelunit"
         },
         "measurementproperty": {
-            "description": "A description of a specific property of a measurement, like fuel parameters for example",
-            "type": "object",
+          "items": {
+            "$ref": "#/definitions/measurementproperty"
+          }
         },
-        "device": {
-            "description": "An object containing the properties of a connected device",
-            "type": "object",
-            "properties": {
-                "name": {
-                    "description": "The name of the device",
-                    "type": "string"
-                },
-                "serial": {
-                    "description": "The serial number of the device, either as a number or a string",
-                    "type": [ "number", "string" ]
-                },
-                "deviceIdentifier": {
-                    "description": "The identifier of the device",
-                    "type": "string"
-                },
-                "partNumber": {
-                    "description": "Part number of device",
-                    "type": "string"
-                },
-                "firmwareVersion": {
-                    "description": "Firmware version of device",
-                    "type": "string"
-                },
-                "boardIndex": {
-                    "type": "integer"
-                },
-                "lastServiceDate": {
-                    "description": "The last service date of the device",
-                    "type": "string"
-                },
-                "measCycle": {
-                    "description": "Meas cycle of device in milliseconds",
-                    "type": "integer"
-                },
-                "measTypes": {
-                    "description": "Measurement types of device's channels",
-                    "type": "array",
-                    "items": { "type": "string" }
-                },
-                "additionalData": {
-                  "items": { "$ref": "#/definitions/additionalData" }
-                }
-            },
-            "anyOf": [
-                { "required": [ "name", "serial" ] },
-                { "required": [ "name", "serial", "deviceIdentifier", "lastServiceDate" ] }
-            ],
-            "additionalProperties": false
+        "values": {
+          "description": "An array containing the measurement values",
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/measurementvalue"
+          }
+        }
+      },
+      "required": [
+        "type",
+        "unit",
+        "values"
+      ],
+      "additionalProperties": false
+    },
+    "measurementvalue": {
+      "description": "An object describing a measurement value",
+      "type": "object",
+      "properties": {
+        "description": {
+          "description": "The measurement value in string form, with appropriate formatting applied",
+          "type": "string"
         },
-        "contact": {
-            "description": "An object containing contact information",
-            "type": "object",
-            "properties": {
-              "referenceNumber" : {
-                  "type": "string"
-              },
-              "name": {
-                  "type": "string"
-              },
-              "street": {
-                  "type": "string"
-              },
-              "city": {
-                  "type": "string"
-              },
-              "country": {
-                  "type": "string"
-              },
-              "phone": {
-                  "type": "string"
-              },
-              "email": {
-                  "type": "string"
-              },
-              "personOfContact": {
-                  "type": "string"
-              },
-              "fax": {
-                  "type": "string"
-              },
-              "homepage": {
-                  "type": "string"
-              },
-              "logo": {
-                  "type": "string"
-              }
-            },
-            "required": [ "name" ],
-            "additionalProperties": false
+        "value": {
+          "description": "The actual measurement value in displayed unit as a number",
+          "type": "number"
         },
-        "measuringpoint": {
-            "description": "An object containing measuring point information",
-            "type": "object",
-            "properties": {
-              "name": {
-                  "type": "string"
-              },
-              "systemNumber": {
-                  "type": "string"
-              },
-              "systemType": {
-                  "type": "string"
-              },
-              "systemManufacturer": {
-                  "type": "string"
-              },
-              "systemSerial": {
-                  "type": "string"
-              },
-              "yearOfConstruction": {
-                  "type": "string"
-              },
-              "notes": {
-                  "type": "string"
-              },
-              "additionalData": {
-                "items": { "$ref": "#/definitions/measurementproperty" }
-              }
-            },
-            "required": [ "name" ],
-            "additionalProperties": false
+        "exponent": {
+          "description": "The precision of the measurement value (depending on the Testo application it can be either the value of x in 10^x or the number of decimal places)",
+          "type": "integer"
+        },
+        "timeStamp": {
+          "description": "The time when this measurement value was created, either as a unix timestamp or as a date in ISO string format",
+          "type": [
+            "number",
+            "string"
+          ]
+        },
+        "status": {
+          "description": "Status of measuement value: (e.g. invalid, overrange, underrange, empty)",
+          "type": "string"
+        }
+      },
+      "anyOf": [
+        {
+          "required": [
+            "timestamp"
+          ]
+        },
+        {
+          "required": [
+            "value",
+            "timeStamp"
+          ]
+        },
+        {
+          "required": [
+            "description",
+            "value",
+            "timeStamp"
+          ]
+        },
+        {
+          "required": [
+            "description",
+            "value",
+            "exponent",
+            "timeStamp"
+          ]
+        },
+        {
+          "required": [
+            "description",
+            "value",
+            "exponent",
+            "timeStamp",
+            "additionalData"
+          ]
+        }
+      ],
+      "additionalProperties": false
+    },
+    "measurementproperty": {
+      "description": "A description of a specific property of a measurement, like fuel parameters for example",
+      "type": "object"
+    },
+    "device": {
+      "description": "An object containing the properties of a connected device",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the device",
+          "type": "string"
+        },
+        "serial": {
+          "description": "The serial number of the device, either as a number or a string",
+          "type": [
+            "number",
+            "string"
+          ]
+        },
+        "deviceIdentifier": {
+          "description": "The identifier of the device",
+          "type": "string"
+        },
+        "partNumber": {
+          "description": "Part number of device",
+          "type": "string"
+        },
+        "firmwareVersion": {
+          "description": "Firmware version of device",
+          "type": "string"
+        },
+        "boardIndex": {
+          "type": "integer"
+        },
+        "lastServiceDate": {
+          "description": "The last service date of the device",
+          "type": "string"
+        },
+        "measCycle": {
+          "description": "Meas cycle of device in milliseconds",
+          "type": "integer"
+        },
+        "measTypes": {
+          "description": "Measurement types of device's channels",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         },
         "additionalData": {
-            "description": "additional data (e.g. calibration data for devices)",
-            "type": "object",
-            "properties": {
-                "name": {
-                    "type": "string"
-                },
-                "value": {
-                    "type": [ "string", "number", "integer", "boolean", "object", "array" ]
-                },
-                "unit": {
-                    "type": "string"
-                }
-            },
-            "required": [ "name" ],
-            "additionalProperties": false
+          "items": {
+            "$ref": "#/definitions/measurementproperty"
+          }
         }
+      },
+      "anyOf": [
+        {
+          "required": [
+            "name",
+            "serial"
+          ]
+        },
+        {
+          "required": [
+            "name",
+            "serial",
+            "deviceIdentifier",
+            "lastServiceDate"
+          ]
+        }
+      ],
+      "additionalProperties": false
+    },
+    "contact": {
+      "description": "An object containing contact information",
+      "type": "object",
+      "properties": {
+        "referenceNumber": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "street": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "personOfContact": {
+          "type": "string"
+        },
+        "fax": {
+          "type": "string"
+        },
+        "homepage": {
+          "type": "string"
+        },
+        "logo": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "additionalProperties": false
+    },
+    "measuringpoint": {
+      "description": "An object containing measuring point information",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "systemNumber": {
+          "type": "string"
+        },
+        "systemType": {
+          "type": "string"
+        },
+        "systemManufacturer": {
+          "type": "string"
+        },
+        "systemSerial": {
+          "type": "string"
+        },
+        "yearOfConstruction": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "additionalData": {
+          "items": {
+            "$ref": "#/definitions/measurementproperty"
+          }
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "additionalProperties": false
     }
+  }
 }
