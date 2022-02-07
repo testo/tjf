@@ -42,7 +42,7 @@
       "description": "Specific properties of the measurement described by the whole data set",
       "type": "array",
       "items": {
-        "$ref": "#/definitions/measurementproperty"
+        "$ref": "#/definitions/additionalData"
       }
     },
     "timeStamp": {
@@ -104,7 +104,7 @@
         "properties",
         "timeStamp",
         "type",
-        "additionalMeasurementInformation"
+        "additionalData"
       ]
     }
   ],
@@ -163,9 +163,9 @@
         "unit": {
           "$ref": "#/definitions/channelunit"
         },
-        "measurementproperty": {
+        "additionalData": {
           "items": {
-            "$ref": "#/definitions/measurementproperty"
+            "$ref": "#/definitions/additionalData"
           }
         },
         "values": {
@@ -210,6 +210,11 @@
         "status": {
           "description": "Status of measuement value: (e.g. invalid, overrange, underrange, empty)",
           "type": "string"
+        },
+        "additionalData": {
+          "items": {
+            "$ref": "#/definitions/additionalData"
+          }
         }
       },
       "anyOf": [
@@ -251,8 +256,7 @@
       ],
       "additionalProperties": false
     },
-    "measurementproperty": {
-      "description": "A description of a specific property of a measurement, like fuel parameters for example",
+    "additionalData": {
       "type": "object"
     },
     "device": {
@@ -302,7 +306,7 @@
         },
         "additionalData": {
           "items": {
-            "$ref": "#/definitions/measurementproperty"
+            "$ref": "#/definitions/additionalData"
           }
         }
       },
@@ -394,7 +398,7 @@
         },
         "additionalData": {
           "items": {
-            "$ref": "#/definitions/measurementproperty"
+            "$ref": "#/definitions/additionalData"
           }
         }
       },
