@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "A data object exported by Testo applications",
   "id": "https://github.com/testo/tjf/tree/public/schema/measurement-slim-v2.0.0",
+  "description": "A data object exported by Testo applications",
   "type": "object",
   "properties": {
     "channels": {
@@ -40,10 +40,8 @@
     },
     "properties": {
       "description": "Specific properties of the measurement described by the whole data set",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/additionalData"
-      }
+      "type": "object",
+      "$ref": "#/definitions/additionalData"
     },
     "timeStamp": {
       "description": "The time when the whole data set was created, either as a unix timestamp or as a date in ISO string format",
@@ -51,6 +49,10 @@
         "number",
         "string"
       ]
+    },
+    "schema":{
+      "description": "location of schema to be used for verification",
+      "type": "string"
     },
     "type": {
       "description": "An object containing information about the type of measurement that is represented by the whole data set",
@@ -79,35 +81,6 @@
       "optional": true
     }
   },
-  "anyOf": [
-    {
-      "required": [
-        "channels",
-        "device",
-        "timeStamp",
-        "type"
-      ]
-    },
-    {
-      "required": [
-        "channels",
-        "device",
-        "properties",
-        "timeStamp",
-        "type"
-      ]
-    },
-    {
-      "required": [
-        "channels",
-        "device",
-        "properties",
-        "timeStamp",
-        "type",
-        "additionalData"
-      ]
-    }
-  ],
   "additionalProperties": false,
   "definitions": {
     "channelunit": {
