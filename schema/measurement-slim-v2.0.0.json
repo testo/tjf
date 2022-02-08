@@ -170,10 +170,6 @@
           "description": "The actual measurement value in displayed unit as a number",
           "type": "number"
         },
-        "exponent": {
-          "description": "The precision of the measurement value (depending on the Testo application it can be either the value of x in 10^x or the number of decimal places)",
-          "type": "integer"
-        },
         "timeStamp": {
           "description": "The time in Milliseconds since Unix Epoch when this measurement value was created",
           "type": [
