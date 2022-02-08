@@ -44,7 +44,7 @@
       "$ref": "#/definitions/additionalData"
     },
     "timeStamp": {
-      "description": "The time when the whole data set was created, either as a unix timestamp or as a date in ISO string format",
+      "description": "The time as unix timestamp when the whole data set was created",
       "type": [
         "number",
         "string"
@@ -174,7 +174,7 @@
           "type": "integer"
         },
         "timeStamp": {
-          "description": "The time when this measurement value was created, either as a unix timestamp or as a date in ISO string format",
+          "description": "The time as unix timestamp when this measurement value was created",
           "type": [
             "number",
             "string"
