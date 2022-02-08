@@ -182,7 +182,7 @@
           ]
         },
         "status": {
-          "description": "Status of measuement value: (e.g. invalid, overrange, underrange, empty)",
+          "description": "Status of measuement value: invalid, overrange, underrange, empty",
           "type": "string"
         },
         "additionalData": {
