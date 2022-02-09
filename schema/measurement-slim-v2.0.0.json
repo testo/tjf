@@ -1,0 +1,346 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "https://github.com/testo/tjf/tree/public/schema/measurement-slim-v2.0.0",
+  "description": "A data object exported by Testo applications",
+  "type": "object",
+  "properties": {
+    "channels": {
+      "description": "The measurement channels of all connected devices",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/channel"
+      }
+    },
+    "device": {
+      "description": "The array of objects describing the connected devices, or, in case the Testo application can only connect to a single device, an object",
+      "type": [
+        "object",
+        "array"
+      ],
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/device"
+      }
+    },
+    "customer": {
+      "description": "Customer contact information",
+      "type": "object",
+      "$ref": "#/definitions/contact"
+    },
+    "organisation": {
+      "description": "Organisation contact information",
+      "type": "object",
+      "$ref": "#/definitions/contact"
+    },
+    "measuringPoint": {
+      "description": "Measuring point of current measurement",
+      "type": "object",
+      "$ref": "#/definitions/measuringpoint"
+    },
+    "properties": {
+      "description": "Specific properties of the measurement described by the whole data set",
+      "type": "object",
+      "$ref": "#/definitions/additionalData"
+    },
+    "timeStamp": {
+      "description": "The time in Milliseconds since Unix Epoch when the whole data set was created",
+      "type": [
+        "number",
+        "string"
+      ]
+    },
+    "schema":{
+      "description": "location of schema to be used for verification",
+      "type": "string"
+    },
+    "type": {
+      "description": "An object containing information about the type of measurement that is represented by the whole data set",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the current measurement application",
+          "type": "string"
+        },
+        "id": {
+          "description": "The id of the current measurement type",
+          "type": "string",
+          "optional": true
+        }
+      },
+      "required": [
+        "name"
+      ]
+    },
+    "images": {
+      "description": "name of images (not included in json but for example included in email when exported with T400)",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "optional": true
+    }
+  },
+  "additionalProperties": false,
+  "definitions": {
+    "channelunit": {
+      "description": "An object describing the unit of a data channel",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The unit of the channel as a string",
+          "type": "string"
+        },
+        "xmlid": {
+          "description": "ZIV mapping id",
+          "type": "string",
+          "optional": true
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "additionalProperties": false
+    },
+    "channeltype": {
+      "description": "An object describing the type of a data channel",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the channel as a string",
+          "type": "string"
+        },
+        "description": {
+          "description": "The displayed and translated name of the channel",
+          "type": "string",
+          "optional": true
+        },
+        "xmlid": {
+          "description": "ZIV mapping id",
+          "type": "string",
+          "optional": true
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "additionalProperties": false
+    },
+    "channel": {
+      "description": "An object describing a channel",
+      "type": "object",
+      "properties": {
+        "type": {
+          "$ref": "#/definitions/channeltype"
+        },
+        "unit": {
+          "$ref": "#/definitions/channelunit"
+        },
+        "additionalData": {
+          "items": {
+            "$ref": "#/definitions/additionalData"
+          }
+        },
+        "values": {
+          "description": "An array containing the measurement values",
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/measurementvalue"
+          }
+        }
+      },
+      "required": [
+        "type",
+        "unit",
+        "values"
+      ],
+      "additionalProperties": false
+    },
+    "measurementvalue": {
+      "description": "An object describing a measurement value",
+      "type": "object",
+      "properties": {
+        "description": {
+          "description": "The measurement value in string form, with appropriate formatting applied",
+          "type": "string"
+        },
+        "value": {
+          "description": "The actual measurement value in displayed unit as a number",
+          "type": "number"
+        },
+        "timeStamp": {
+          "description": "The time in Milliseconds since Unix Epoch when this measurement value was created",
+          "type": [
+            "number",
+            "string"
+          ]
+        },
+        "status": {
+          "description": "Status of measuement value: invalid, overrange, underrange, empty",
+          "type": "string"
+        },
+        "additionalData": {
+          "items": {
+            "$ref": "#/definitions/additionalData"
+          }
+        }
+      },
+      "required": [
+        "timeStamp"
+      ],
+      "additionalProperties": false
+    },
+    "additionalData": {
+      "type": "object"
+    },
+    "device": {
+      "description": "An object containing the properties of a connected device",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the device",
+          "type": "string"
+        },
+        "serial": {
+          "description": "The serial number of the device, either as a number or a string",
+          "type": [
+            "number",
+            "string"
+          ]
+        },
+        "deviceIdentifier": {
+          "description": "The identifier of the device",
+          "type": "string"
+        },
+        "partNumber": {
+          "description": "Part number of device",
+          "type": "string"
+        },
+        "firmwareVersion": {
+          "description": "Firmware version of device",
+          "type": "string"
+        },
+        "boardIndex": {
+          "type": "integer"
+        },
+        "lastServiceDate": {
+          "description": "The last service date of the device",
+          "type": "string"
+        },
+        "measCycle": {
+          "description": "Meas cycle of device in milliseconds",
+          "type": "integer"
+        },
+        "measTypes": {
+          "description": "Measurement types of device's channels",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "additionalData": {
+          "items": {
+            "$ref": "#/definitions/additionalData"
+          }
+        }
+      },
+      "anyOf": [
+        {
+          "required": [
+            "name",
+            "serial"
+          ]
+        },
+        {
+          "required": [
+            "name",
+            "serial",
+            "deviceIdentifier",
+            "lastServiceDate"
+          ]
+        }
+      ],
+      "additionalProperties": false
+    },
+    "contact": {
+      "description": "An object containing contact information",
+      "type": "object",
+      "properties": {
+        "referenceNumber": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "street": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "personOfContact": {
+          "type": "string"
+        },
+        "fax": {
+          "type": "string"
+        },
+        "homepage": {
+          "type": "string"
+        },
+        "logo": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "additionalProperties": false
+    },
+    "measuringpoint": {
+      "description": "An object containing measuring point information",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "systemNumber": {
+          "type": "string"
+        },
+        "systemType": {
+          "type": "string"
+        },
+        "systemManufacturer": {
+          "type": "string"
+        },
+        "systemSerial": {
+          "type": "string"
+        },
+        "yearOfConstruction": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "additionalData": {
+          "items": {
+            "$ref": "#/definitions/additionalData"
+          }
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "additionalProperties": false
+    }
+  }
+}
