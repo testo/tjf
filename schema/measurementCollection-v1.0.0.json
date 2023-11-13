@@ -38,32 +38,314 @@
             "name",
             "value"
           ]
-        },
-        {
-          "type": "object",
-          "properties": {
-            "relatedUuids": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "description": {
-                    "type": "string"
-                  },
-                  "name": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "description",
-                  "name"
-                ]
-              }
-            }
-          }
         }
       ]
     },
+  "measurements":{  
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "additionalMeasurementInformation": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "description": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "description",
+                "name"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "value"
+              ]
+            }
+          ]
+        },
+        "channels": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "additionalData": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "name",
+                        "value"
+                      ]
+                    }
+                  ]
+                },
+                "type": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name"
+                  ]
+                },
+                "unit": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name"
+                  ]
+                },
+                "values": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "description": {
+                          "type": "string"
+                        },
+                        "timeStamp": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "timeStamp",
+                        "value"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "additionalData",
+                "type",
+                "unit",
+                "values"
+              ]
+            }
+          ]
+        },
+        "device": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "additionalData": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "boolean"
+                        }
+                      },
+                      "required": [
+                        "name",
+                        "value"
+                      ]
+                    }
+                  ]
+                },
+                "boardIndex": {
+                  "type": "integer"
+                },
+                "firmwareVersion": {
+                  "type": "string"
+                },
+                "measCycle": {
+                  "type": "integer"
+                },
+                "measTypes": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "name": {
+                  "type": "string"
+                },
+                "partNumber": {
+                  "type": "string"
+                },
+                "serial": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "additionalData",
+                "boardIndex",
+                "firmwareVersion",
+                "measCycle",
+                "measTypes",
+                "name",
+                "partNumber",
+                "serial"
+              ]
+            }
+          ]
+        },
+        "measuringPoint": {
+          "type": "object",
+          "properties": {
+            "additionalData": {
+              "type": "array",
+              "items": {}
+            },
+            "name": {
+              "type": "string"
+            },
+            "notes": {
+              "type": "string"
+            },
+            "systemManufacturer": {
+              "type": "string"
+            },
+            "systemNumber": {
+              "type": "string"
+            },
+            "systemSerial": {
+              "type": "string"
+            },
+            "systemType": {
+              "type": "string"
+            },
+            "yearOfConstruction": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "additionalData",
+            "name",
+            "notes",
+            "systemManufacturer",
+            "systemNumber",
+            "systemSerial",
+            "systemType",
+            "yearOfConstruction"
+          ]
+        },
+        "properties": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "values": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "precision": {
+                          "type": "integer"
+                        },
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "name",
+                "values"
+              ]
+            }
+          ]
+        },
+        "schemaVersion": {
+          "type": "string"
+        },
+        "timeStamp": {
+          "type": "string"
+        },
+        "type": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name"
+          ]
+        }
+      },
+      "required": [
+        "additionalMeasurementInformation",
+        "channels",
+        "device",
+        "measuringPoint",
+        "properties",
+        "schemaVersion",
+        "timeStamp",
+        "type"
+      ]
+    }
+  ]
+},
     "customer": {
       "description": "Customer contact information",
       "type": "object",
@@ -144,10 +426,7 @@
         "logo": {
           "type": "string"
         }
-      },
-      "required": [
-        "name"
-      ]
+      }
     }
   }
 }
