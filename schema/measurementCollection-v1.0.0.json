@@ -2,10 +2,6 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
-    "schema": {
-      "description": "location of schema to be used for verification",
-      "type": "string"
-    },
     "additionalMeasurementInformation": {
       "type": "array",
       "items": [
@@ -42,22 +38,11 @@
         {
           "type": "object",
           "properties": {
-            "relatedUuids": {
+            "measurementUuids": {
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": {
-                  "description": {
-                    "type": "string"
-                  },
-                  "name": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "description",
-                  "name"
-                ]
+                "$ref": "https://raw.githubusercontent.com/testo/tjf/public/schema/v1.0.6/slim-schema-v1.0.6.json"
               }
             }
           }
@@ -105,7 +90,6 @@
   },
   "required": [
     "additionalMeasurementInformation",
-    "schema",
     "timeStamp",
     "type"
   ],
@@ -144,10 +128,7 @@
         "logo": {
           "type": "string"
         }
-      },
-      "required": [
-        "name"
-      ]
+      }
     }
   }
 }
