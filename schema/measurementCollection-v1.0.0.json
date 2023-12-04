@@ -42,7 +42,7 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "$ref": "https://raw.githubusercontent.com/testo/tjf/public/schema/v1.0.6/slim-schema-v1.0.6.json"
+                "$ref": "https://raw.githubusercontent.com/testo/tjf/public/schema/slim-schema-v1.1.0.json"
               }
             }
           }
