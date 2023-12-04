@@ -1,0 +1,134 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "additionalMeasurementInformation": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "description",
+            "name"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "value": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "value"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "measurementUuids": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "$ref": "https://raw.githubusercontent.com/testo/tjf/public/schema/slim-schema-v1.1.0.json"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "customer": {
+      "description": "Customer contact information",
+      "type": "object",
+      "$ref": "#/definitions/contact"
+    },
+    "organisation": {
+      "description": "Organisation contact information",
+      "type": "object",
+      "$ref": "#/definitions/contact"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "timeStamp": {
+      "description": "The time when the whole data set was created, either as a unix timestamp or as a date in ISO string format",
+      "type": [
+        "number",
+        "string"
+      ]
+    },
+    "type": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ]
+    }
+  },
+  "required": [
+    "additionalMeasurementInformation",
+    "timeStamp",
+    "type"
+  ],
+  "definitions": {
+    "contact": {
+      "description": "An object containing contact information",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "street": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "personOfContact": {
+          "type": "string"
+        },
+        "fax": {
+          "type": "string"
+        },
+        "homepage": {
+          "type": "string"
+        },
+        "logo": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
