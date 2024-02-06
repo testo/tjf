@@ -132,6 +132,9 @@
                 "additionalData": {
                   "items": { "$ref": "#/definitions/additionalData" }
                 },
+                "alarmData": {
+                    "items": { "$ref": "#/definitions/alarmData" }
+                },
                 "values": {
                     "description": "An array containing the measurement values",
                     "type": "array",
@@ -429,6 +432,22 @@
                 }
             },
             "required": [ "name" ],
+            "additionalProperties": false
+        },
+        "alarmData": {
+            "description": "alarm data (upper, upper warning, lower limits)",
+            "type": "object",
+            "properties": {
+                "upperAlarm": {
+                    "type": "object"
+                },
+                "upperWarning": {
+                    "type": "object"
+                },
+                "lowerAlarm": {
+                    "type": "object"
+                }
+            },
             "additionalProperties": false
         }
     }
