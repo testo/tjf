@@ -14,7 +14,7 @@
       "description": "An array of measurements that is part of this collection",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/testo/tjf/public/schema/slim-schema-v1.1.0.json"
+        "$ref": "https://raw.githubusercontent.com/testo/tjf/public/schema/slim-schema-v1.2.0.json"
       }
     },
     "customer": {
