@@ -1,0 +1,119 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A collection of measurements",
+  "type": "object",
+  "properties": {
+    "additionalMeasurementInformation": {
+      "description": "Additional information about the measurement",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/measurementadditionalproperty"
+      }
+    },
+    "measurements": {
+      "description": "An array of measurements that is part of this collection",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/testo/tjf/public/schema/slim-schema-v1.2.0.json"
+      }
+    },
+    "customer": {
+      "description": "Customer contact information",
+      "$ref": "#/definitions/contact"
+    },
+    "organisation": {
+      "description": "Organisation contact information",
+      "$ref": "#/definitions/contact"
+    },
+    "images": {
+      "description": "An array of image filenames",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "timeStamp": {
+      "description": "The time when the whole data set was created, unix timestamp in milliseconds",
+      "type": ["number","string"]
+    },
+    "type": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ]
+    }
+  },
+  "required": [
+    "additionalMeasurementInformation",
+    "timeStamp",
+    "type"
+  ],
+  "definitions": {
+    "contact": {
+      "description": "An object containing contact information",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "street": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "personOfContact": {
+          "type": "string"
+        },
+        "fax": {
+          "type": "string"
+        },
+        "homepage": {
+          "type": "string"
+        },
+        "logo": {
+          "type": "string"
+        }
+      }
+    },
+    "measurementadditionalproperty": {
+      "description": "A description of an additional property of a measurement",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the property, translated into the current language of the application",
+          "type": "string"
+        },
+        "description": {
+          "description": "The description of the property, translated into the current language of the application",
+          "type": "string"
+        },
+        "value": {
+          "description": "Additional value",
+          "type": [ "string", "integer", "number", "array", "object", "boolean" ],
+          "optional": true
+        }
+      },
+      "required": [ "name" ],
+      "additionalProperties": false
+    }
+  }
+}
