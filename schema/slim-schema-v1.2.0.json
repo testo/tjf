@@ -85,7 +85,6 @@
         { "required": [ "channels", "device", "properties", "timeStamp", "type" ] },
         { "required": [ "channels", "device", "properties", "timeStamp", "type", "additionalMeasurementInformation" ] }
     ],
-    "additionalProperties": false,
     "definitions": {
         "channelunit": {
             "description": "An object describing the unit of a data channel",
@@ -192,7 +191,7 @@
                     "type": [ "number", "string" ]
                 },
                 "status": {
-                    "description": "Status of measuement value: (e.g. invalid, overrange, underrange, empty)",
+                    "description": "Status of measurement value: (e.g. invalid, overrange, underrange, empty)",
                     "type": "string"
                 },
                 "additionalData": {
